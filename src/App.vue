@@ -31,9 +31,12 @@ export default {
 
 <style lang="scss">
 
-  .logo {
-    display: flex;
+  .logo-wrapper {
+    display: inline-flex;
     align-items: center;
+    background-color: rgba(246, 127, 114, .11%); // @todo the colo change with the word color!
+    padding: 0px 16px;
+    border-radius: 30px;
 
     .title {
       margin-left: 1em;

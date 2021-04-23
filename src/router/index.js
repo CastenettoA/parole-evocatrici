@@ -10,7 +10,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
 
   { path: '/metodo', name: 'Metodo', component: Metodo },
-  { path: '/w/:word', name: 'Word', component: Word },
+  { path: '/p/:word', name: 'Word', component: Word },
 
   { path: "*", name: 'pagenotfound', component: Home } // make page not found component
 ]
