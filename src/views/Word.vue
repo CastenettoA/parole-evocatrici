@@ -47,23 +47,31 @@
     <hr>
 
     <div class="pratica">
-      <h2>Metodi per utilizzare le parole</h2>
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-         of type and scrambled it to make Lorem Ipsum has been the industry's standard dummy text ever since the 1
-         500s, when an unknown printer took a galley of type and scrambled it to make <a target="_blank" href="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGRlc2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Immagine di esempio.</a></p>
+      <h2>Metodi per utilizzare questa parola</h2>
+      <p>Bene! Ora non resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto. Se vuoi approfondire l'argomento in questa pagina trovi
+        una <a href="#sintesi">sintesi dei diversi metodi e delle differenti modalità per utilizzare la tecnica delle parole evocatrici</a>.</p>
       
-      <h3>Uso del cartoncino</h3>
-        <p>Questo metodo è molto semplice: ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comunlativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small></p>
+      <hr>
+      <h3>#1 Metodo del cartoncino</h3>
+        <p>Questo metodo è molto semplice: Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comunlativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small> <a target="_blank" href="demo">(esempi e approfondimento)</a></p>
 
-      <h3>Uso dell'attenzione cosciente</h3>
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
-
+      <hr>
+      <h3>#2 Metodo dell'attenzione cosciente</h3>
+      <p>Concentrarsi e prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora rilassati e segui questi punti:</p>
       <ol>
-        <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
-        <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
-        <li>BD, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the /li>
-        <li>Bsdds ds sdsjknw nwjnedwjwww www</li>
+        <li>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <br>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala aggiorare e prendine nota.</li>
+        <li>Rifletti sul significato della parola, e annota i risultati.</li>
+        <li>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</li>
+        <li>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</li>
+        <li>Scrivi la parola diverse volte.</li>
       </ol>
+      <p><a target="_blank" href="demo">(esempi e approfondimento)</a></p>
+
+      <hr>
+      <h3>Modalità e Ritmo</h3>
+      <p>Ogni quanto devo praticare?</p>
+
+      <p>Come promesso all'inizio, <b>la tecnica delle parole evocatrici</b> è molto semplice, dobbiamo solo ricordarcene e metterla in pratica.</p>
     </div>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>

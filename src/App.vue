@@ -24,10 +24,8 @@ export default {
 
 <style lang="scss">
    nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #335bf1; // try a gradient guy!
+    position: absolute; top: 0; left: 0;
+    background-image: linear-gradient(to right top, #0b36d3 45%, #65FBD2); 
     color: #fff;
     width: 100%;
     padding: 30px 0 56px 0;
@@ -41,6 +39,7 @@ export default {
       h2 { font-size: 2.6em; }
       h3 { font-size: 1.7em; padding-right: 30%; margin-bottom: 1em;}
       p { font-size: 1.25em; font-weight: 400; opacity: .7;}
+      a { color: #fff; text-decoration: underline;}
     }
    }
 
@@ -91,7 +90,7 @@ export default {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    margin-top: 29em;
+    margin-top: 31em;
 
     .word {
       width: 48%;
@@ -101,6 +100,8 @@ export default {
       transition: .3s all;
       margin-bottom: 2em;
       position: relative;
+
+      order: 1; // needed for order "starred" flex items
 
       .star {
         position: absolute;
