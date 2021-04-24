@@ -1,13 +1,6 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
-
-
     <router-view/>
-
   </div>
 </template>
 
@@ -30,20 +23,63 @@ export default {
 </script>
 
 <style lang="scss">
+   nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #335bf1; // try a gradient guy!
+    color: #fff;
+    width: 100%;
+    padding: 30px 0 56px 0;
+
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+
+      h1,h2,h3,p { color: #fff; font-family: 'Source Sans Pro'; font-weight: 900; margin-bottom: 0; margin-top: 0;}
+
+      h2 { font-size: 2.6em; }
+      h3 { font-size: 1.7em; padding-right: 30%; margin-bottom: 1em;}
+      p { font-size: 1.25em; font-weight: 400; opacity: .7;}
+    }
+   }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 3em;
+  }
 
   .logo-wrapper {
     display: inline-flex;
     align-items: center;
-    background-color: rgba(246, 127, 114, .11%); // @todo the colo change with the word color!
+    // background-color: rgba(246, 127, 114, .11%); 
+    background-color: rgba(0,0,0, .11%); // @todo the colo change with the word color!
     padding: 0px 16px;
     border-radius: 30px;
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover {
+      background-color: rgba(0,0,0, .29%); 
+    }
 
     .title {
       margin-left: 1em;
-      font-size: 1.2em;
-      font-weight: bold;
       text-transform: uppercase;
     }
+  }
+
+  .subtitle {
+      margin-left: .4em;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: .2em;
+      }
   }
 
   p {
@@ -55,6 +91,7 @@ export default {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
+    margin-top: 29em;
 
     .word {
       width: 48%;

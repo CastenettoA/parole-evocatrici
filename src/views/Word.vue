@@ -1,44 +1,70 @@
 <template>
   <div class="home-view">
     <nav>
+      <section>
       <div class="logo">
-        <div class="logo-wrapper">
-        <div class="img">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="salmon" class="bi bi-spellcheck" viewBox="0 0 16 16">
-            <path d="M8.217 11.068c1.216 0 1.948-.869 1.948-2.31v-.702c0-1.44-.727-2.305-1.929-2.305-.742 0-1.328.347-1.499.889h-.063V3.983h-1.29V11h1.27v-.791h.064c.21.532.776.86 1.499.86zm-.43-1.025c-.66 0-1.113-.518-1.113-1.28V8.12c0-.825.42-1.343 1.098-1.343.684 0 1.075.518 1.075 1.416v.45c0 .888-.386 1.401-1.06 1.401zm-5.583 1.035c.767 0 1.201-.356 1.406-.737h.059V11h1.216V7.519c0-1.314-.947-1.783-2.11-1.783C1.355 5.736.75 6.42.69 7.27h1.216c.064-.323.313-.552.84-.552.527 0 .864.249.864.771v.464H2.346C1.145 7.953.5 8.568.5 9.496c0 .977.693 1.582 1.704 1.582zm.42-.947c-.44 0-.845-.235-.845-.718 0-.395.269-.684.84-.684h.991v.538c0 .503-.444.864-.986.864zm8.897.567c-.577-.4-.9-1.088-.9-1.983v-.65c0-1.42.894-2.338 2.305-2.338 1.352 0 2.119.82 2.139 1.806h-1.187c-.04-.351-.283-.776-.918-.776-.674 0-1.045.517-1.045 1.328v.625c0 .468.121.834.343 1.067l-.737.92z"/>
-            <path d="M14.469 9.414a.75.75 0 0 1 .117 1.055l-4 5a.75.75 0 0 1-1.116.061l-2.5-2.5a.75.75 0 1 1 1.06-1.06l1.908 1.907 3.476-4.346a.75.75 0 0 1 1.055-.117z"/>
-          </svg>
+        <div class="logo-wrapper" @click="goToHome()" :style="{backgroundColor: currentColor}">
+          <div class="img">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#444" class="bi bi-spellcheck" viewBox="0 0 16 16">
+              <path d="M8.217 11.068c1.216 0 1.948-.869 1.948-2.31v-.702c0-1.44-.727-2.305-1.929-2.305-.742 0-1.328.347-1.499.889h-.063V3.983h-1.29V11h1.27v-.791h.064c.21.532.776.86 1.499.86zm-.43-1.025c-.66 0-1.113-.518-1.113-1.28V8.12c0-.825.42-1.343 1.098-1.343.684 0 1.075.518 1.075 1.416v.45c0 .888-.386 1.401-1.06 1.401zm-5.583 1.035c.767 0 1.201-.356 1.406-.737h.059V11h1.216V7.519c0-1.314-.947-1.783-2.11-1.783C1.355 5.736.75 6.42.69 7.27h1.216c.064-.323.313-.552.84-.552.527 0 .864.249.864.771v.464H2.346C1.145 7.953.5 8.568.5 9.496c0 .977.693 1.582 1.704 1.582zm.42-.947c-.44 0-.845-.235-.845-.718 0-.395.269-.684.84-.684h.991v.538c0 .503-.444.864-.986.864zm8.897.567c-.577-.4-.9-1.088-.9-1.983v-.65c0-1.42.894-2.338 2.305-2.338 1.352 0 2.119.82 2.139 1.806h-1.187c-.04-.351-.283-.776-.918-.776-.674 0-1.045.517-1.045 1.328v.625c0 .468.121.834.343 1.067l-.737.92z"/>
+              <path d="M14.469 9.414a.75.75 0 0 1 .117 1.055l-4 5a.75.75 0 0 1-1.116.061l-2.5-2.5a.75.75 0 1 1 1.06-1.06l1.908 1.907 3.476-4.346a.75.75 0 0 1 1.055-.117z"/>
+            </svg>
+          </div>
+          <div class="title">Parole Evocatrici</div>
         </div>
-        <div class="title">Parole Evocatrici <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-</svg> {{currentWord}}</div>
+
+        <div class="subtitle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg> 
+          {{currentWord}}  
         </div>
-      </div>
+    </div>
 
       <p class="summary">Che certe parole come serenità, coraggio, gioia, compassione possano influenzare i nostri stati d'animoe le nostre idee non ha bisogno di essere dimostrato. Tutte le parole sono simboli che non solo indicano o denotano oggetti o fatti psicologici ma che posseggono anche il potere di stimolare e provocare l'attività ad esse accociata.</p>
+      </section>
     </nav>
 
     <main class="words">
-       <div class="word" :style="{backgroundColor: 'salmon'}">
-       <div class="star">
-         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star" viewBox="0 0 18 18">
-            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-          </svg>
-         <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 18 18">
-           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-         </svg> -->
-       </div>
+       <div class="word" :style="{backgroundColor: currentColor}">
+        <div class="star">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star" viewBox="0 0 18 18">
+              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+            </svg>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 18 18">
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+          </svg> -->
+        </div>
         <p class="main-word" disabled>{{currentWord}}</p>
+      </div>
+
+      <div class="quotes">
+        <p>Importanza enorme della scelta di ciò a cui prestare attenzione, della direzione, dell'obiettivo che diamo alla nostra attenzione.
+           E questa scelta è in potere della nostra volontà. <small>Roberto Assagioli, Appunto manoscritto (AS 6632)</small></p>
       </div>
     </main>
 
+    <hr>
+
+    <div class="pratica">
+      <h2>Metodi per utilizzare le parole</h2>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+         of type and scrambled it to make Lorem Ipsum has been the industry's standard dummy text ever since the 1
+         500s, when an unknown printer took a galley of type and scrambled it to make <a target="_blank" href="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGRlc2t8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Immagine di esempio.</a></p>
+      
+      <h3>Uso del cartoncino</h3>
+        <p>Questo metodo è molto semplice: ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comunlativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small></p>
+
+      <h3>Uso dell'attenzione cosciente</h3>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+
       <ol>
-        <li>Ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comunlativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small></li>
         <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</li>
         <li>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</li>
         <li>BD, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the /li>
         <li>Bsdds ds sdsjknw nwjnedwjwww www</li>
       </ol>
+    </div>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
@@ -52,10 +78,29 @@ export default {
   data: function() {
     return {
       currentWord: this.$route.params.word, // todo: check for vulnerability
+      currentColor: this.$route.params.color, 
     }
   },
+  created: function() {
+ 
+  },
   methods: {
-
+    goToHome: function(w) { 
+      console.log(this.$route);
+      if(this.$route.name != 'Home')
+        this.$router.push({ name: "Home" });
+    }
   }
 }
 </script>
+
+<style lang="scss">
+  .quotes {
+    width: 48%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monospace;
+  }
+</style>
