@@ -86,7 +86,6 @@ export default {
   }
 
   main.words {
-    margin-top: 2em;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
@@ -101,7 +100,7 @@ export default {
       margin-bottom: 2em;
       position: relative;
 
-      order: 1; // needed for order "starred" flex items
+      order: 0; // needed for order "starred" flex items
 
       .star {
         position: absolute;
@@ -127,6 +126,8 @@ export default {
       .button {
         padding: 4px 12px;
         position: absolute;  bottom: 1em;
+
+        display: flex; align-items: center;
 
         font-family: Arial; font-size: 0.9em; letter-spacing: normal; color: #fff; font-weight: bold; text-transform: uppercase;
         background-color: #1e88e5;
