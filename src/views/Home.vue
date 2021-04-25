@@ -17,8 +17,8 @@
 
         <h2>Risveglia le tue qualità</h2>
         <h3>con una tecnica semplice, facile da applicare, ed allo stesso tempo molto efficace.</h3>
-        <p class="summary">Questa tecnica fa uso delle parole per trasformare il nostro stato psichico ed è basata su fatti molto concreti che riguardano la nostra psiche. 
-          Se non conosci questa tecnica, prima di cominciare, ti consiglio di leggere l'<a href="#intro">introduzione alla tecnica delle parole evocatrici.</a>
+        <p class="summary">La tecnica delle parole evocatrici fa uso delle <i>parole</i> per trasformare il nostro stato psichico. 
+          Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici.</a>
         <br><br>
         <p>Seleziona una parola oppure scegline una casualmente. (puoi anche aggiungere una nuova parola, se preferisci).</p>
       </section>

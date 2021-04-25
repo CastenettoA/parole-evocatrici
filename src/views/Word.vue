@@ -21,7 +21,7 @@
         </div>
     </div>
 
-      <p class="summary"> Hai scelto di praticare con la parola {{currentWord}}. Ora segui le istruzioni che trovi sotto e inizia a praticare.</p>
+      <p class="summary">Hai scelto di praticare con la parola {{currentWord}}. Ora segui le istruzioni che trovi sotto e inizia la tua pratica.</p>
       </section>
     </nav>
 
@@ -47,11 +47,10 @@
     <hr>
 
     <div class="pratica">
-      <h2>Metodi per utilizzare questa parola</h2>
-      <p>Bene! Ora non resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto. Se vuoi approfondire l'argomento in questa pagina trovi
-        una <a href="#sintesi">sintesi dei diversi metodi e delle differenti modalità per utilizzare la tecnica delle parole evocatrici</a>.</p>
+      <h1>Come utilizzare la tua parola</h1>
       
-      <hr>
+      <p>Ora non resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
+
       <h3>#1 Metodo del cartoncino</h3>
         <p>Questo metodo è molto semplice: Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small> <a target="_blank" href="demo">(esempi e approfondimento)</a></p>
 
@@ -69,10 +68,12 @@
       <p><a target="_blank" href="demo">(esempi e approfondimento)</a></p>
 
       <hr>
-      <h3>Modalità e Ritmo</h3>
+      <h3>Modalità, Ritmo e approfondimenti.</h3>
       <p>Ogni quanto devo praticare?</p>
 
       <p>Come promesso all'inizio, <b>la tecnica delle parole evocatrici</b> è molto semplice, dobbiamo solo ricordarcene e metterla in pratica.</p>
+        <p>Se vuoi approfondire l'argomento in questa pagina trovi
+        una <a href="/metodi">sintesi dei diversi metodi e delle differenti modalità per utilizzare la tecnica delle parole evocatrici</a>.</p>
     </div>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
@@ -83,7 +84,7 @@
 // 'Ammirazione Apprezzamento Attenzione Bellezza Beatitudine Calma Compassione Comprensione Collaborazione Coraggio Creatività Audacia Decisione Distacco Determinazione Discernimento Disciplina Energia Decisione Distacco Determinazione Discernimento Disciplina Energia Entusiasmo Eternità Fede Libertà Amicizia Generosità Bontà Volontà buona Gratitudine Armonia Umorismo Inclusività Infinito Iniziativa Integrazione Gioia Liberazione Luce Amore Ordine Pazienza Pace Costanza Positività Forza Prontezza Quiete Realtà Rinnovamento Risolutezza Serenità Servizio Silenzio Semplicità Sintesi Tenacia Verità Comprensione Universalità Vitalità Interezza Volontà Saggezza Stupore'
 
 export default {
-  name: 'Home',
+  name: 'Word',
   data: function() {
     return {
       currentWord: this.$route.params.word, // todo: check for vulnerability

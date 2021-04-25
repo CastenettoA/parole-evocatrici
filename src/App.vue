@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style lang="scss">
+   body {
+      max-width: 700px;
+   }
+
    nav {
     position: absolute; top: 0; left: 0;
     background-image: linear-gradient(to right top, #0b36d3 45%, #65FBD2); 
@@ -31,14 +35,15 @@ export default {
     padding: 30px 0 56px 0;
 
     section {
-      max-width: 800px;
+      max-width: 700px;
       margin: 0 auto;
 
       h1,h2,h3,p { color: #fff; font-family: 'Source Sans Pro'; font-weight: 900; margin-bottom: 0; margin-top: 0;}
 
-      h2 { font-size: 2.6em; }
-      h3 { font-size: 1.7em; padding-right: 30%; margin-bottom: 1em;}
-      p { font-size: 1.25em; font-weight: 400; opacity: .7;}
+      h1 { margin-top: 1em; }
+      h2 { font-size: 2.4em; }
+      h3 { font-size: 1.5em; padding-right: 30%; margin-bottom: 1em;}
+      p { font-size: 1.2em; font-weight: 400; opacity: .7;}
       a { color: #fff; text-decoration: underline;}
     }
    }
@@ -48,7 +53,7 @@ export default {
     align-items: center;
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
   }
 
   .logo-wrapper {
@@ -85,11 +90,19 @@ export default {
     margin: 1em 0;
   }
 
+  main {
+    i.highlight {
+      background-color: #C8E6C9;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+  }
+
   main.words {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    margin-top: 31em;
+    margin-top: 28em;
 
     .word {
       width: 48%;

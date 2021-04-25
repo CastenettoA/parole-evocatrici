@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Metodo from '../views/Metodo.vue'
+import Tecnica from '../views/Tecnica.vue'
+import Metodi from '../views/Metodi.vue'
 import Word from '../views/Word.vue'
 
 Vue.use(VueRouter)
@@ -9,7 +10,8 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', name: 'Home', component: Home },
 
-  { path: '/metodo', name: 'Metodo', component: Metodo },
+  { path: '/tecnica', name: 'Tecnica', component: Tecnica },
+  { path: '/metodi', name: 'Metodi', component: Metodi },
   { path: '/p/:word', name: 'Word', component: Word },
 
   { path: "*", name: 'pagenotfound', component: Home } // make page not found component
