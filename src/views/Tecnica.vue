@@ -58,6 +58,13 @@ export default {
     return {
     }
   },
+
+  created: function() {
+  document.title = 'Parole Evocatrici - Introduzione alla Tecnica delle parole evocatrici.';
+  document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici di Roberto Assagioli, facilmente accessibile online. Lasciati ispirare e inizia a sviluppare le qualità che senti carenti in te o che vuoi deliberatamente sviluppare.';
+  // window.scrollTo(0,0); //// needed because the windwos was not to top... try to belive it
+  },
+
   methods: {
     goToHome: function(w) { 
       console.log(this.$route);

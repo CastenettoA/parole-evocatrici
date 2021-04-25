@@ -48,6 +48,14 @@
       Ad esempio ascoltando temi, brani musicali collegati con parole e frasi relative oppure movimenti ritrmici, gesti e danze che ricordano il simbolo associato alla parola.
       </p>
 
+      <h2>Ritmo e scelta</h2>
+      <p>Possiamo scegliere deliberatamente la parola da utilizzare a seconda della qualità che vogliamo risvegliare
+         o sviluppare oppure scegliere la parola casualmente da un gruppo di parole adatte e adottandola come "parola d'ordine" per quel dato giorno.</p>
+      <p>Come ritmo possiamo adottare quello di utilizzare una parola per un intervallo di tempo più o meno lungo (1 giorno, settimana mese, o più) 
+        seguito da una ripetizione dopo una pausa, oppure possiamo utilizzare una parola al giorno a rotazione.</p>
+        <p>La pratica ci farà capire qual'è il ritmo e le modalità più efficienti che certamente variano a seconda dello scopo che ci siamo prefissati
+           e dal nostro tipo psicologico. (per un approfondimento dei tipi psicologici vedi a pagina p.183, capitolo "Psicologia Differenziale" del libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli)</p>
+
       <h2>Le parole evocatrici al lavoro e in famiglia</h2>
       <p>Possiamo certamente utilizzare questa tecnica anche nel nostro ambiente di lavoro ed in famiglia. Coinvolgendo le altre persone in esercizi di gruppo 
         oppure utilizzando l'esercizio del cartoncino, o stramite l'affisione di slogan nei corridoi.</p>
@@ -67,10 +75,25 @@
       <p>Personalmente, poco per volta, sto iniziando a regalare dei cartoncini ai miei amici o familiari, spiegando anche la tecnica, e sembrano essere 
         sempre ben accetti.</p>
 
-      <p>E tu? Hai mai condiviso un <i>cartoncino</i> a un tuo conoscente? Se vuoi puoi condividere questa applicazione e farla conoscere ai tuoi amici.</p>
+      <p>E tu? Hai mai condiviso un cartoncino a un tuo conoscente? Se vuoi, puoi condividere questa applicazione e farla conoscere ai tuoi amici.</p>
 
       <h2>Altri campi di applicazione</h2>
-      <p></p>
+      <h3>Utilizzo individuale</h3>
+      <p>Uso individuale per sviluppare le proprie facoltà deficienti e gli aspetti superiori della psiche; in termini psicosintetici per 
+        ottenere una formazione armonia e integrale della personalità, fare la <i>propria psicosintesi</i>
+      </p>
+      <p>La tecnica può essere utilizzata per prepararsi ad un compito particolare o ad una riflessione. Per esempio prima di una meditazione è possibile provare a lavorare 
+        sulla parola <i>concentrazione</i> o <i>attenzione</i>, ecc.
+      </p>
+
+      <h3>Utilizzo collettivo e psicoterapico</h3>
+      <p>I vari campi di applicazione sono molto vasti, qui elenco qualche spunto iniziale:</p>
+      <ol>
+        <li>In famiglia o nelle scuole (ed anche dai professoli: es: Pazienza, Comprensione)</li>
+        <li>Nelle varie attività quotidiane: per prepararci psicologicamente a situazioni che causano stress o paure come competizioni, esami, concerti, eventi sportivi, ecc.</li>
+        <li>Nel campo medico. I cartoncini possono essere utilizzati da persona malate che stanno molto tempo a letto (Pazienza, Confidenza, Pace), o per prepararsi a operazioni chilurghie o anche nella preparazione al parto.</li>
+        <li>Nelle relazioni interpersonali e sociali (amici, in famiglia, al lavoro, a scuola, alle riunioni di condominio, nelle assemble, ecc)</li>
+      </ol>
     </main>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
@@ -84,6 +107,11 @@ export default {
   data: function() {
     return {
     }
+  },
+  created: function() {
+    document.title = 'Parole Evocatrici - Introduzione ai metodi pratici';
+    document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici ha vari metodi e campi di applicazione: Personale, Collettivo, Sanitario, Solastico e Psicologico.';
+    // window.scrollTo(0,0); //// needed because the windwos was not to top... try to belive it
   },
   methods: {
     goToHome: function(w) { 
