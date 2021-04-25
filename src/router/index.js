@@ -5,6 +5,7 @@ import Tecnica from '../views/Tecnica.vue'
 import Metodi from '../views/Metodi.vue'
 import Word from '../views/Word.vue'
 import Random from '../views/Random.vue'
+import NewWord from '../views/NewWord.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +16,8 @@ const routes = [
   { path: '/metodi', name: 'Metodi', component: Metodi },
 
   { path: '/random', name: 'Random', component: Random },
-  { path: '/p/:word', name: 'Word', component: Word },
+  { path: '/newWord', name: 'NewWord', component: NewWord },
+  { path: '/word/:word', name: 'Word', component: Word },
 
   { path: "*", name: 'pagenotfound', component: Home } // make page not found component
 ]
