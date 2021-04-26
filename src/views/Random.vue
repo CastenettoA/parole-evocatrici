@@ -10,7 +10,7 @@
                 <path d="M14.469 9.414a.75.75 0 0 1 .117 1.055l-4 5a.75.75 0 0 1-1.116.061l-2.5-2.5a.75.75 0 1 1 1.06-1.06l1.908 1.907 3.476-4.346a.75.75 0 0 1 1.055-.117z"/>
               </svg>
             </div>
-            <div class="title">Parole Evocatrici - parola casuale</div>
+            <div class="title">Parole Evocatrici</div>
           </div>
 
         </div>
@@ -82,7 +82,6 @@ export default {
   name: 'Home',
   data: function() {
     return {
-      // todo: remove duplicates from array!
       basicWords: ["Perseveranza", "Contemplazione", "Riflessione", "Rispetto", "Sacralità",  "Elevazione", "Vigilanza", "Accettazione", "Consacrazione", "Equilibrio", "Persistenza", "Reverenza", "Solidarietà", "Ammirazione", "Apprezzamento", "Attenzione", "Bellezza", "Beatitudine", "Calma", "Compassione", "Collaborazione", "Coraggio", "Creatività", "Audacia", "Energia", "Decisione", "Distacco", "Determinazione", "Discernimento", "Disciplina", "Entusiasmo", "Eternità", "Fede", "Libertà", "Amicizia", "Generosità", "Bontà", "Volontà buona", "Gratitudine", "Armonia", "Umorismo", "Inclusività", "Infinito", "Iniziativa", "Integrazione", "Gioia", "Liberazione", "Luce", "Amore", "Ordine", "Pazienza", "Pace", "Costanza", "Positività", "Forza", "Prontezza", "Quiete", "Realtà", "Rinnovamento", "Risolutezza", "Serenità", "Servizio", "Silenzio", "Semplicità", "Sintesi", "Tenacia", "Verità", "Comprensione", "Universalità", "Vitalità", "Interezza", "Volontà", "Saggezza", "Stupore"].sort( () => .5 - Math.random() ), // randomized array folks
       currentWord: [],
       currentColor: '#71f285', 
@@ -93,6 +92,14 @@ export default {
     document.title = 'Parole Evocatrici - Parola Casuale.';
     document.getElementsByTagName('meta')["description"].content = 'Con questa pagina generi una parola evocatrice casuale con cui esercitarti.';
     // window.scrollTo(0,0); //// needed because the windwos was not to top... try to belive it
+
+    // (1) controllo se l'utente ha aggiunto delle parole (2) inserisco le parole nella lista (3) mescolo nuovamente le parole
+    let userNewWords = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : '';
+    if(userNewWords != '')
+      this.basicWords.push(...userNewWords);
+
+    // (3) rimescolo le parole
+    this.basicWords.sort( () => .5 - Math.random() );
 
     this.currentColor = randomColor({ luminosity: 'light', hue: 'green', count: 1 }); // random color on any page load folks!
     

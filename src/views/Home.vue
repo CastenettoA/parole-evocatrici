@@ -68,6 +68,12 @@ export default {
     document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici di Roberto Assagioli, facilmente accessibile online. Lasciati ispirare e inizia a sviluppare le qualità che senti carenti in te o che vuoi deliberatamente sviluppare.';
     window.scrollTo(0,0); // needed because the windwos was not to top... try to belive it
 
+    // (1) controllo se l'utente ha aggiunto delle parole (2) inserisco le parole nella lista
+    let userNewWords = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : '';
+    if(userNewWords != '')
+      this.basicWords.push(...userNewWords);
+
+
     let c = randomColor({ luminosity: 'light', hue: 'green', count: this.basicWords.length }); // random color on any page load folks!
     
     let favoriteWords = localStorage.getItem('favoriteWords');

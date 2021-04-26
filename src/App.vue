@@ -24,20 +24,28 @@ export default {
 
 <style lang="scss">
    body {
+      max-width: 100%;
+      margin: 0; padding: 0;
+   }
+   
+    main.words, .pratica, footer, nav section {
       max-width: 700px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 750px) {
+        padding: 0 1em;
+      }
    }
 
+   footer { margin-bottom: 2em; }
+
    nav {
-    position: absolute; top: 0; left: 0;
     background-image: linear-gradient(to right top, #0b36d3 45%, #65FBD2); 
     color: #fff;
     width: 100%;
     padding: 30px 0 56px 0;
 
     section {
-      max-width: 700px;
-      margin: 0 auto;
-
       h1,h2,h3,p { color: #fff; font-family: 'Source Sans Pro'; font-weight: 900; margin-bottom: 0; margin-top: 0;}
 
       h1 { margin-top: 1em; }
@@ -60,7 +68,7 @@ export default {
     display: inline-flex;
     align-items: center;
     // background-color: rgba(246, 127, 114, .11%); 
-    background-color: rgba(0,0,0, .11%); // @todo the colo change with the word color!
+    background-color: rgba(0,0,0, .11%);
     padding: 0px 16px;
     border-radius: 30px;
     cursor: pointer;
@@ -74,16 +82,6 @@ export default {
       margin-left: 1em;
       text-transform: uppercase;
     }
-  }
-
-  .subtitle {
-      margin-left: .4em;
-      display: flex;
-      align-items: center;
-
-      svg {
-        margin-right: .2em;
-      }
   }
 
   p {
@@ -102,7 +100,7 @@ export default {
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    margin-top: 28em;
+    margin-top: -2em; // so cool bro, if my friends just seed this... they fall in love
 
     .word {
       width: 48%;
@@ -168,6 +166,7 @@ export default {
         font-size: 1.8em;
         letter-spacing: 3px;
         font-family: 'Rock Salt';
+        text-align: center; // also for long word
       }
 
       &:hover {
