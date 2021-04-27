@@ -9,9 +9,6 @@
 
 export default {
   name: 'App',
-  // components: {
-  //   Home, Metodo
-  // },
   data: function() {
     return {
     }
@@ -26,6 +23,7 @@ export default {
    body {
       max-width: 100%;
       margin: 0; padding: 0;
+      font-family: 'Source Sans Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
    }
    
     main.words, .pratica, footer, nav section {
@@ -38,6 +36,14 @@ export default {
    }
 
    footer { margin-bottom: 2em; }
+
+   .docs nav {
+      padding: 30px 0 1em 0; // reduced paddign for only testual page.
+
+      section .logo {
+            margin-bottom: 1em;
+      }
+   }
 
    nav {
     background-image: linear-gradient(to right top, #0b36d3 45%, #65FBD2); 
@@ -96,6 +102,13 @@ export default {
     }
   }
 
+  button.danger {
+    background-color: #fd7775;
+    &:hover {
+      background-color: #EF5350;
+    }
+  }
+
   main.words {
     display: flex;
     flex-flow: wrap;
@@ -112,6 +125,13 @@ export default {
       position: relative;
 
       order: 0; // needed for order "starred" flex items
+
+      .main-word { // avoid anoing selection on mobile device
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */   
+      }
 
       .star {
         position: absolute;
@@ -151,6 +171,7 @@ export default {
 
       &:hover {
         .button {
+          animation: pulse 2s infinite; // animation of button boxshadow folks
           opacity: 1;
 
           &:hover {
@@ -172,11 +193,13 @@ export default {
       &:hover {
         transform: scale(1.05);
         box-shadow: 0px 0px 3px rgba(0,0,0, .2), 0px 0px 18px rgba(0,0,0, .1);
+        border: 2px solid #3085d6;
       }
 
       &:focus, &:active {
         transform: scale(1.03);
         box-shadow: 0px 0px 3px rgba(0,0,0, .2), 0px 0px 18px rgba(0,0,0, .1);
+        border: 2px solid #3085d6;
       }
     }
   }
@@ -219,6 +242,11 @@ export default {
             font-size: 1.6em;
           }
         }
+
+        .quotes {
+          width: 100%;
+          height: auto;
+        }
       }
     }
 
@@ -232,4 +260,33 @@ export default {
       }
     }
   }
+
+  // animazione all'hover dei bottoni "pratica con questa parola" in homepage
+  @-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(30, 136, 229, 0.6);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(30, 136, 229, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(30, 136, 229, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(30, 136, 229, 0.6);
+    box-shadow: 0 0 0 0 rgba(30, 136, 229, 0.6);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(30, 136, 229, 0);
+      box-shadow: 0 0 0 10px rgba(30, 136, 229, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(30, 136, 229, 0);
+      box-shadow: 0 0 0 0 rgba(30, 136, 229, 0);
+  }
+}
+
+
 </style>
