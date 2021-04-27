@@ -62,12 +62,13 @@
           </svg></button>
           </div>
         </div>
-  <transition name="fade">
-        <div class="open-method" v-show="visibleMethod == 'method1'" id="method1">
-          <h3>#1 Metodo del cartoncino</h3>
-          <p>Questo metodo è molto semplice: Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small> <a target="_blank" href="demo">(esempi e approfondimento)</a></p>
-        </div>
-  </transition>
+        
+        <transition name="fade">
+              <div class="open-method" v-show="visibleMethod == 'method1'" id="method1">
+                <h3>#1 Metodo del cartoncino</h3>
+                <p>Questo metodo è molto semplice: Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small> <a target="_blank" href="demo">(esempi e approfondimento)</a></p>
+              </div>
+        </transition>
 
         <div class="method">
           <div class="icon">
@@ -261,7 +262,7 @@ export default {
     }
   }
 
-  .open-methods {
+  .open-method {
     background-color: #eee; border: 1px solid #ddd;
     padding: .5em 1em; margin-bottom: 1em;
     border-radius: 6px;
