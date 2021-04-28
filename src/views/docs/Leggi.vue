@@ -12,7 +12,7 @@
           </div>
           <div class="title">Parole Evocatrici</div>
         </div>
-    </div>
+      </div>
 
       <p class="summary">Breve introduzione alla tecnica della parole evocatrici di <b>Roberto Assagioli</b>.</p>
       </section>
@@ -63,13 +63,14 @@
         <p><a href="https://amzn.to/3nmT7JA">Rimando al libro per maggiori dettagli.</a> pag 50.</p>
 
         <h3>9° legge: Gli istinti, gli impulsi, i desideri e le emozioni tendono ad esprimersi ed esigono espessione.</h3>
-        <p>Come per la legge 5° anche qui è necessaria un attenta valutazione dei nostri impulsi e desideri (osservandoli da una posizione centrale, disidentificata) al fine di lavorare su un problema pratico: 
-          "Come esprimere in modo adeguato e costruttivo, o almeno non dannoso, tutti questi istinti, impulsi, emozioni, ecc"?
+        <p>Come per la legge 5° anche qui è necessaria un attenta valutazione dei nostri impulsi e desideri (osservandoli da una posizione centrale, disidentificata) al fine di lavorare su un problema molto pratico: 
+          "Esprimere in modo adeguato e costruttivo, o almeno non dannoso, tutti questi istinti, impulsi, emozioni, ecc".
         </p>
         <p>Non esprimerli potrebbe significare disturbi psicosomatici, stress psichici e nervosi.</p>
 
-        <h3>10° legge: Le energie psichiche si possono esprimere: (1) direttamente (sfogo-catarsi); (2) indirettamente, attraverso un'azione simbolica; (3) con un processo di trasmutazione.</h3>
-        <p></p>
+        <h3>10° legge: Le energie psichiche si possono esprimere: 
+          (1) direttamente (sfogo-catarsi); (2) indirettamente, attraverso un'azione simbolica; (3) con un processo di trasmutazione.</h3>
+        <p><a href="https://amzn.to/3nmT7JA">Rimando al libro per ulteriori approfondimenti.</a> pag 51.</p>
    
     </main>
 

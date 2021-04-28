@@ -79,8 +79,12 @@ export default {
 
           .istituto {
             img {
-              width: 21px; height: auto;
+              width: 21px; height: 21px;
             }
+          }
+
+          .question {
+            padding: .105em;
           }
 
           .donation, .istituto, .menu-items {
