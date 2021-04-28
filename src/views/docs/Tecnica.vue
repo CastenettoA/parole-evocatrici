@@ -26,7 +26,7 @@
       il significato ad esse associato. 
       Esse tendono manifestare e rendere operativi i significati che rappresentano; tendono a produrre le azioni e gli atti corrispondenti.</p>
 
-      <p>In accordo con le <a href="#">Leggi Psicologiche</a> enunciate da Roberto A., (Leggi I-III, VI e VIII), ogni idea tende a produrre le azioni esterne corrispondenti,
+      <p>In accordo con le <a href="/leggi-psicologiche">Leggi Psicologiche</a> enunciate da Roberto A., (Leggi I-III, VI e VIII), ogni idea tende a produrre le azioni esterne corrispondenti,
        nonchè evoca i sentimenti ad essa associati; L'attenzione e la ripetizione poi, rafforzano le idee e le immagini corrispondenti; infine, gli effetti 
        dell'idea o dell'immagine (cioè l'attivazione di ciò che essa significa) si realizzano senza che noi c'è ne rendiamo conto.</p>
 

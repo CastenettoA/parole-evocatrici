@@ -68,6 +68,38 @@ export default {
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 1.5em;
+
+    .header-menu { // icona donazioni e menu
+          display: flex; justify-content: center; align-items: center;
+          margin-left: auto;
+
+          .donation {
+            margin-right: .3em;
+          }
+
+          .donation, .menu-items {
+            margin-right: .35em;
+            background-color: rgba(0,0,0, .1);
+            padding: .6em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            transition: .3 all;
+
+            &:hover {
+              cursor: pointer;
+            background-color: rgba(0,0,0, .2);
+            }
+
+            span {
+              margin-left: .5em;
+              font-weight: 100;
+              font-size: .8em;
+              text-transform: uppercase;
+            }
+          }
+    }
   }
 
   .logo-wrapper {
