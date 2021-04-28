@@ -14,6 +14,7 @@
         </div>
     </div>
 
+  
       <p class="summary">Modifica il testo della card sottostante e poi clicca su <b>Aggiungi Parola</b> per inserire una nuova parola nel tuo spazio personale.</p>
       </section>
     </nav>
@@ -29,6 +30,12 @@
       </div>
     </main>
 
+    <div class="pratica">
+      <p>Nota: non essendoci un sistema di registrazione in questa applicazione, 
+        le parole che aggiungi vengono salvate nel tuo Browser Web. Se accedi all'applicazione con un altro browser non troverai 
+        la parola che hai aggiunto adesso. <br><br>Inoltre, sebbene le parole che hai aggiunto dovrebbero persistere 'per sempre', non posso
+         garantirti la durata effettiva nel tuo browser web.<br> <br> Detto questo, buona pratica :)</p>
+    </div>  
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
 </template>
@@ -85,7 +92,7 @@ export default {
           this.addToFavorites(this.newWord); // aggiungo la p. ai favoriti
 
           // mostro un alert di conferma
-          this.$alert('La parola ' + this.newWord + ' è stata aggiunta correttamente', 'Parola Aggiunta.','success').then(() => {
+          this.$alert("La parola" + this.newWord + ' è stata aggiunta correttamente.', 'Parola Aggiunta.','success').then(() => {
             this.goToHome(); // reindirizzo l'utente alla home page dopo l'infobox
           });
       }

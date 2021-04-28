@@ -55,7 +55,7 @@ export default {
       h1,h2,h3,p { color: #fff; font-family: 'Source Sans Pro'; font-weight: 900; margin-bottom: 0; margin-top: 0;}
 
       h1 { margin-top: 1em; }
-      h2 { font-size: 2.4em; }
+      h1 { font-size: 2.4em; }
       h3 { font-size: 1.5em; padding-right: 30%; margin-bottom: 1em;}
       p { font-size: 1.2em; font-weight: 400; opacity: .7;}
       a { color: #fff; text-decoration: underline;}
@@ -77,7 +77,13 @@ export default {
             margin-right: .3em;
           }
 
-          .donation, .menu-items {
+          .istituto {
+            img {
+              width: 21px; height: auto;
+            }
+          }
+
+          .donation, .istituto, .menu-items {
             margin-right: .35em;
             background-color: rgba(0,0,0, .1);
             padding: .6em;
@@ -107,10 +113,12 @@ export default {
     align-items: center;
     // background-color: rgba(246, 127, 114, .11%); 
     background-color: rgba(0,0,0, .11%);
-    padding: 0px 16px;
+    padding: 0.3em 16px;
     border-radius: 30px;
     cursor: pointer;
     transition: .3s all;
+
+    img { display: flex; justify-content: center; align-items: center;}
 
     &:hover {
       background-color: rgba(0,0,0, .29%); 
