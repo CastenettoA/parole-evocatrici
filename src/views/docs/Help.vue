@@ -39,21 +39,31 @@
 
     <main class="pratica">
       <h1>Come utilizzare questo sito web.</h1>
-      <p>In questo sito web puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a>, a pagina 62.</p>
-      <h2>Conosci, Pratica.</h2>
+      <p>Qui puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel <a href="https://amzn.to/3nmT7JA">suo libro</a> (pagina 62).</p>
+      <h2>Conosci ➡️ Pratica.</h2>
       <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/tecnica">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
       <p>Come avrai intuito la tecnica e i suoi metodi sono molto semplici e possono essere applicati con altrettanta semplicità. Il metodo più immediato è quello di scrivere su un cartoncino la qualità interiore 
           che vuoi evocare e poi posizionare il cartoncino in un luogo dove attiri la tua attenzione.</p>
       <p>Se vuoi praticare con l'aiuto di questo sito web devi recarti nella <a href="/">homepage</a>, scegliere una parola ed infine scegliere il metodo con cui praticare.</p>
-      <p>Se ti "senti fortunato" puoi <a href="/random">scegliere una parola evocatrice casualmente</a> 😁.</p>
+      <p>Se ti "senti fortunato" puoi <a href="/random">scegliere una parola evocatrice casualmente</a> 😁 o anche aggiungere una <a href="/newWord">nuova parola</a>.</p>
+
+      <h4>Perchè ho creato questo sito web?</h4>
+      <p>Il sito è nato grazie ad un <i>intuizione</i> ed è stato sviluppato grazie alla mia <i>passione infromatica e creativa</i> nonchè la 
+      volontà di <i>suggestionarmi attivamente</i> tramite le parole evocatrici creando questo sito web.</p>
+
+      <p>Inoltre questo sito vuole essere una motivazione in più per chiunque voglia sinceramente praticare questa tecnica; vuole 
+        essere uno strumento pratico, un polo di ispirazione, soprattutto per chi inizia, ma anche per chi vuole ravvivare la pratica,
+         intensificarla o condividere la tecnica in una maniera più visuale.
+      </p>
 
       <h2>Condividere la pratica</h2>
       <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
-          dedicandoli una parola il particolare; io lo sto facendo, qui a casa e con i miei amici, e le parole sono sempre ben accette.</p>
+          dedicandoli una parola in particolare; io lo sto facendo, qui a casa e con i miei amici,
+           e noto con piacere che le parole sono sempre ben accette!</p>
           <p>Buon lavoro e... buon divertimento!</p>
     </main>
 
-    <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
 </template>
 
@@ -85,7 +95,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
       this.$alert(
-        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattita>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
          { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }

@@ -121,9 +121,9 @@
       </div>
 
       <details> 
-        <summary>Condividi la tua pratica 🥳🎉🎉</summary>       
+        <summary>Sul condividere la pratica 🥳🎉🎉</summary>       
         <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
-          dedicandoli una parola il particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e le parole sono sempre ben accette!</p>
+          dedicandoli una parola in particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e noto con piacere che le parole sono sempre ben accette!</p>
           <h4>Come condividere?</h4>
           <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in particolare da dedicare e condividerla.</p>
         </details>
@@ -147,7 +147,7 @@
              
     </div>
 
-    <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
 </template>
 
@@ -170,7 +170,7 @@ export default {
           'Di ogni nostro pensiero, sforzo, atto buono viene tenuto conto dalla Grande Legge che regge gli atomi, gli uomini ed i mondi.',
           'Liberarsi per liberare',
           'Il grande mezzo per progredire spiritualmente è lo sforzo attivo e continuo di bene, voluto, amato ed offerto.',
-          
+
      ].sort( () => .5 - Math.random() ),
       visibleMethod: null,
 
@@ -205,7 +205,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
       this.$alert(
-        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattita>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
          { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }

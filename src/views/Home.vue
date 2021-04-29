@@ -35,10 +35,10 @@
 
         <h1>Risveglia le tue qualità</h1>
         <h3>con una tecnica semplice, facile da applicare, ed allo stesso tempo molto efficace.</h3>
-        <p class="summary">La tecnica delle parole evocatrici fa uso delle <i>parole</i> per trasformare il nostro stato psichico. 
-          Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici.</a>
+        <p class="summary">⚠️ Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici</a>.
         <br><br>
-        <p>Seleziona una parola oppure <a href="/random">ottienine una casualmente</a>; (puoi anche <a href="/newWord">aggiungere una nuova parola</a>, se preferisci).</p>
+        <p>🔥 Per iniziare seleziona una parola sotto, oppure <a href="/random">ottienine una casuale</a> o <a href="/newWord">aggiungine una nuova</a>.
+        <small style="text-transform: uppercase; font-weight: bold; font-style: italic; opacity: .5; margin-left: .3em;">Let's Go!</small></p>
       </section>
     </nav>
 
@@ -65,7 +65,7 @@
 
 
 
-    <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
 </template>
 
@@ -123,7 +123,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
       this.$alert(
-        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattita>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
          { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }

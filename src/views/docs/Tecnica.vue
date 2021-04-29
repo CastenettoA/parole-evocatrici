@@ -60,12 +60,13 @@
       </p>
 
       <p>Per approfondire gli altri metodi ti rimando a questo semplice articolo: <a href="/metodi">I vari metodi per utilizzare le parole evocatrici</a>.</p>
-      <p>La tecnica delle parole evocatrici è descritta nel libro di Roberto Assagioli chiamato <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> (p. 62)</p>
+      <p>La tecnica delle parole evocatrici è descritta nel libro di Roberto Assagioli chiamato <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> (p. 62). Se non lo conosci 
+      ti consiglio vivamente di acquistarlo, personalmente vi ho trovato molti spunti, grandi lezioni di saggezza nonchè l'ispirazione per questa applicazione.</p>
       <p>Se ti senti pronto puoi <a href="/">tornare alla homepage</a> ed iniziare a praticare.</p>
      
     </main>
 
-    <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
   </div>
 </template>
 
@@ -99,7 +100,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
       this.$alert(
-        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattita>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
          { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }

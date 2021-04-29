@@ -58,8 +58,12 @@ export default {
       h1 { margin-top: 1em; }
       h1 { font-size: 2.4em; }
       h3 { font-size: 1.5em; padding-right: 30%; margin-bottom: 1em;}
-      p { font-size: 1.2em; font-weight: 400; opacity: .7;}
-      a { color: #fff; text-decoration: underline;}
+      p { font-size: 1.2em; font-weight: 400; }
+      a { text-decoration: underline;}
+
+      p,a {
+        color: #ccc;
+      }
     }
    }
 
