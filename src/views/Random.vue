@@ -120,13 +120,30 @@
         <p><a target="_blank" href="demo">(esempi e approfondimento)</a></p>
       </div>
 
-      <hr>
-      <h3>Modalità, Ritmo e approfondimenti.</h3>
-      <p>Ogni quanto devo praticare?</p>
+          <details> 
+        <summary>Condividi la tua pratica 🥳🎉🎉</summary>       
+        <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
+          dedicandoli una parola il particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e le parole sono sempre ben accette!</p>
+          <h4>Come condividere?</h4>
+          <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in particolare da dedicare e condividerla.</p>
+        </details>
 
-      <p>Come promesso all'inizio, <b>la tecnica delle parole evocatrici</b> è molto semplice, dobbiamo solo ricordarcene e metterla in pratica.</p>
-        <p>Se vuoi approfondire l'argomento in questa pagina trovi
-        una <a href="/metodi">sintesi dei diversi metodi e delle differenti modalità per utilizzare la tecnica delle parole evocatrici</a>.</p>
+      <details> 
+        <summary>Ogni quanto devo praticare? 🕒</summary>    
+        <p>Non c'è una risposta univoca uguale per tutti. Il tempo dedicato alla pratica varia a seconda dello scopo che ti sei prefissato 
+          e vari altri fattori.</p>
+
+          <p>Puo essere utile, all'inizio, definire un orario preciso ed un numero di volte definito in cui praticare (bastano pochi minuti al giorno), così inizierai 
+            ad entrare nella pratica <i>velocemente</i>.
+          </p>
+
+         <p>Come <b>ritmo</b> puoi adottare quello di utilizzare una parola per un intervallo di tempo più o meno lungo (ad es. 1 giorno, settimana mese, o più) 
+        seguito da una ripetizione dopo una pausa, oppure puoi utilizzare una parola al giorno a rotazione.</p>
+        <p><b>La pratica ci farà capire qual'è il ritmo e la modalità più efficiente</b> che certamente variano anche a seconda del nostro tipo psicologico 
+        (per un approfondimento dei tipi psicologici vedi a pagina p.183, capitolo "Psicologia Differenziale" del libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli).</p>
+   
+       
+        </details>
     </div>
 
 
@@ -149,8 +166,12 @@ export default {
           'La crisi è l’inizio del cambiamento, è la prima attivazione di una nuova aspirazione, la prova tangibile della possibilità di spostarsi da un punto stabile',
           'Siamo dominati da tutto ciò con cui ci identifichiamo, possiamo dominare tutto ciò da cui ci siamo disidentificati.',
           'Tre cose soprattutto l\'uomo moderno deve apprendere per divenire sano e completo: l\'arte del riposo, l\'arte della contemplazione, l\'arte del riso e del sorriso.',
-          'La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.'
-      ].sort( () => .5 - Math.random() ),
+          'La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.',
+          'Di ogni nostro pensiero, sforzo, atto buono viene tenuto conto dalla Grande Legge che regge gli atomi, gli uomini ed i mondi.',
+          'Liberarsi per liberare',
+          'Il grande mezzo per progredire spiritualmente è lo sforzo attivo e continuo di bene, voluto, amato ed offerto.',
+          
+     ].sort( () => .5 - Math.random() ),
       visibleMethod: null,
 
       basicWords: ["Perseveranza", "Contemplazione", "Riflessione", "Rispetto", "Sacralità",  "Elevazione", "Vigilanza", "Accettazione", "Consacrazione", "Equilibrio", "Persistenza", "Reverenza", "Solidarietà", "Ammirazione", "Apprezzamento", "Attenzione", "Bellezza", "Beatitudine", "Calma", "Compassione", "Collaborazione", "Coraggio", "Creatività", "Audacia", "Energia", "Decisione", "Distacco", "Determinazione", "Discernimento", "Disciplina", "Entusiasmo", "Eternità", "Fede", "Libertà", "Amicizia", "Generosità", "Bontà", "Volontà buona", "Gratitudine", "Armonia", "Umorismo", "Inclusività", "Infinito", "Iniziativa", "Integrazione", "Gioia", "Liberazione", "Luce", "Amore", "Ordine", "Pazienza", "Pace", "Costanza", "Positività", "Forza", "Prontezza", "Quiete", "Realtà", "Rinnovamento", "Risolutezza", "Serenità", "Servizio", "Silenzio", "Semplicità", "Sintesi", "Tenacia", "Verità", "Comprensione", "Universalità", "Vitalità", "Interezza", "Volontà", "Saggezza", "Stupore"].sort( () => .5 - Math.random() ), // randomized array folks
