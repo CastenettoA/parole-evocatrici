@@ -2,17 +2,36 @@
   <div class="home-view">
     <nav>
       <section>
-      <div class="logo">
-        <div class="logo-wrapper" @click="goToHome()">
+        <div class="logo">
+          <div class="logo-wrapper" @click="goToHome()">
           <div class="img">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="salmon" class="bi bi-spellcheck" viewBox="0 0 16 16">
-              <path d="M8.217 11.068c1.216 0 1.948-.869 1.948-2.31v-.702c0-1.44-.727-2.305-1.929-2.305-.742 0-1.328.347-1.499.889h-.063V3.983h-1.29V11h1.27v-.791h.064c.21.532.776.86 1.499.86zm-.43-1.025c-.66 0-1.113-.518-1.113-1.28V8.12c0-.825.42-1.343 1.098-1.343.684 0 1.075.518 1.075 1.416v.45c0 .888-.386 1.401-1.06 1.401zm-5.583 1.035c.767 0 1.201-.356 1.406-.737h.059V11h1.216V7.519c0-1.314-.947-1.783-2.11-1.783C1.355 5.736.75 6.42.69 7.27h1.216c.064-.323.313-.552.84-.552.527 0 .864.249.864.771v.464H2.346C1.145 7.953.5 8.568.5 9.496c0 .977.693 1.582 1.704 1.582zm.42-.947c-.44 0-.845-.235-.845-.718 0-.395.269-.684.84-.684h.991v.538c0 .503-.444.864-.986.864zm8.897.567c-.577-.4-.9-1.088-.9-1.983v-.65c0-1.42.894-2.338 2.305-2.338 1.352 0 2.119.82 2.139 1.806h-1.187c-.04-.351-.283-.776-.918-.776-.674 0-1.045.517-1.045 1.328v.625c0 .468.121.834.343 1.067l-.737.92z"/>
-              <path d="M14.469 9.414a.75.75 0 0 1 .117 1.055l-4 5a.75.75 0 0 1-1.116.061l-2.5-2.5a.75.75 0 1 1 1.06-1.06l1.908 1.907 3.476-4.346a.75.75 0 0 1 1.055-.117z"/>
-            </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#fdd835" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+            </div>
+            <div class="title">Parole Evocatrici</div>
           </div>
-          <div class="title">Parole Evocatrici</div>
+
+          <div class="header-menu">
+
+                <div class="donation" v-on:click="openDonationInfoBox()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#fff" class="bi bi-gift-fill" viewBox="0 0 16 16">
+                    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+                  </svg>
+                </div>
+
+                <div class="istituto" v-on:click="openIstitutoInfoBox()">
+                  <!-- <img src="@/assets/istituto-psico-sintesi.png"> -->
+                  <img :src="require('@/assets/img/istituto-psicosintesi-white.png')"/>
+                </div>
+
+                <div class="donation question" v-on:click="goToinfoPage()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
+                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                  </svg>
+                </div>
+          </div>
         </div>
-    </div>
 
       <p class="summary">Hai scelto di praticare con la parola {{currentWord}}. Ora segui le istruzioni che trovi sotto e inizia la tua pratica.</p>
       </section>
@@ -101,13 +120,31 @@
         <p><a target="_blank" href="demo">(esempi e approfondimento)</a></p>
       </div>
 
-      <hr>
-      <h3>Modalità, Ritmo e approfondimenti.</h3>
-      <p>Ogni quanto devo praticare?</p>
+      <details> 
+        <summary>Condividi la tua pratica 🥳🎉🎉</summary>       
+        <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
+          dedicandoli una parola il particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e le parole sono sempre ben accette!</p>
+          <h4>Come condividere?</h4>
+          <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in particolare da dedicare e condividerla.</p>
+        </details>
 
-      <p>Come promesso all'inizio, <b>la tecnica delle parole evocatrici</b> è molto semplice, dobbiamo solo ricordarcene e metterla in pratica.</p>
-        <p>Se vuoi approfondire l'argomento in questa pagina trovi
-        una <a href="/metodi">sintesi dei diversi metodi e delle differenti modalità per utilizzare la tecnica delle parole evocatrici</a>.</p>
+      <details> 
+        <summary>Ogni quanto devo praticare? 🕒</summary>    
+        <p>Non c'è una risposta univoca uguale per tutti. Il tempo dedicato alla pratica varia a seconda dello scopo che ti sei prefissato 
+          e vari altri fattori.</p>
+
+          <p>Puo essere utile, all'inizio, definire un orario preciso ed un numero di volte definito in cui praticare (bastano pochi minuti al giorno), così inizierai 
+            ad entrare nella pratica <i>velocemente</i>.
+          </p>
+
+         <p>Come <b>ritmo</b> puoi adottare quello di utilizzare una parola per un intervallo di tempo più o meno lungo (ad es. 1 giorno, settimana mese, o più) 
+        seguito da una ripetizione dopo una pausa, oppure puoi utilizzare una parola al giorno a rotazione.</p>
+        <p><b>La pratica ci farà capire qual'è il ritmo e la modalità più efficiente</b> che certamente variano anche a seconda del nostro tipo psicologico 
+        (per un approfondimento dei tipi psicologici vedi a pagina p.183, capitolo "Psicologia Differenziale" del libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli).</p>
+   
+       
+        </details>
+             
     </div>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
@@ -129,8 +166,12 @@ export default {
           'La crisi è l’inizio del cambiamento, è la prima attivazione di una nuova aspirazione, la prova tangibile della possibilità di spostarsi da un punto stabile',
           'Siamo dominati da tutto ciò con cui ci identifichiamo, possiamo dominare tutto ciò da cui ci siamo disidentificati.',
           'Tre cose soprattutto l\'uomo moderno deve apprendere per divenire sano e completo: l\'arte del riposo, l\'arte della contemplazione, l\'arte del riso e del sorriso.',
-          'La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.'
-      ].sort( () => .5 - Math.random() ),
+          'La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.',
+          'Di ogni nostro pensiero, sforzo, atto buono viene tenuto conto dalla Grande Legge che regge gli atomi, gli uomini ed i mondi.',
+          'Liberarsi per liberare',
+          'Il grande mezzo per progredire spiritualmente è lo sforzo attivo e continuo di bene, voluto, amato ed offerto.',
+          
+     ].sort( () => .5 - Math.random() ),
       visibleMethod: null,
 
 
@@ -154,6 +195,26 @@ export default {
     }
   },
   methods: {
+        openDonationInfoBox: function() {
+      this.$alert(
+        "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
+       "🌟 Supporta questo progetto 🌟", 
+       "info", 
+         { confirmButtonText: '<a href="https://www.patreon.com/castenettoa" style="color: #fff">Supportami su Patreon 🚀</a>' }
+      );
+    },
+    openIstitutoInfoBox: function() {
+      this.$alert(
+        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattita>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+       "🌟 La Psicosintesi 🌟", 
+       "info", 
+         { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }
+      );
+    },
+    goToinfoPage: function(w) { 
+      if(this.$route.name != 'Help')
+        this.$router.push({ name: "Help" });
+    },
     scrollToMethod(id) {
 
       setTimeout(function() { //scroll to method

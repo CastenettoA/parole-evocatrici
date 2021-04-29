@@ -33,36 +33,24 @@
           </div>
         </div>
 
-      <p class="summary t-center">Breve introduzione alla tecnica della parole evocatrici di <b>Roberto Assagioli</b>.</p>
+      <p class="summary t-center">"La libertà dell'uomo è definitiva ed immediata se così egli vuole; essa non dipende da vittorie esterne ma interne." &mdash; Yogananda Paramahansa</p>
       </section>
     </nav>
 
     <main class="pratica">
-      <h1>La tecnica delle parole evocatrici</h1>
-      
-      <p>L'influenza di certe parole, come <i class="highlight">semplicità, intuizione, entusiasmo, creatività</i> sul nostro stato d'animo e le nostre idee è stato ampiamente 
-      dimostrato e verificato. Tutte le parole sono simboli che oltre a rappresentare un oggetto o fatto psicologico posseggono anche la capacità di attivare e stimolare
-      il significato ad esse associato. 
-      Esse tendono manifestare e rendere operativi i significati che rappresentano; tendono a produrre le azioni e gli atti corrispondenti.</p>
+      <h1>Come utilizzare questo sito web.</h1>
+      <p>In questo sito web puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a>, a pagina 62.</p>
+      <h2>Conosci, Pratica.</h2>
+      <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/tecnica">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
+      <p>Come avrai intuito la tecnica e i suoi metodi sono molto semplici e possono essere applicati con altrettanta semplicità. Il metodo più immediato è quello di scrivere su un cartoncino la qualità interiore 
+          che vuoi evocare e poi posizionare il cartoncino in un luogo dove attiri la tua attenzione.</p>
+      <p>Se vuoi praticare con l'aiuto di questo sito web devi recarti nella <a href="/">homepage</a>, scegliere una parola ed infine scegliere il metodo con cui praticare.</p>
+      <p>Se ti "senti fortunato" puoi <a href="/random">scegliere una parola evocatrice casualmente</a> 😁.</p>
 
-      <p>In accordo con le <a href="/leggi-psicologiche">Leggi Psicologiche</a> enunciate da Roberto A., (Leggi I-III, VI e VIII), ogni idea tende a produrre le azioni esterne corrispondenti,
-       nonchè evoca i sentimenti ad essa associati; L'attenzione e la ripetizione poi, rafforzano le idee e le immagini corrispondenti; infine, gli effetti 
-       dell'idea o dell'immagine (cioè l'attivazione di ciò che essa significa) si realizzano senza che noi c'è ne rendiamo conto.</p>
-
-      <p>Ora che siamo consapevoli di queste leggi e dell'importanza delle <i>parole</i>, possiamo utilizzare la tecnica delle parole evocatrici sotto la 
-      direzione della nostra volontà e così influenzarci positivamente nella direzione che riteniamo più opportuna o evocando 
-      quelle qualità che in noi sentiamo meno sviluppate.</p>      
-
-      <h3>I metodi</h3>
-      <p>Una volta compreso il meccanismo alla base di questa tecnica, è possibile adattarla alla propria situazione di vita come meglio crediamo.
-         Il metodo più semplice è quello di scrivere su un cartoncino la parola che descrive la qualità che vogliamo evocare e sviluppare, e poi 
-         mettere questo cartoncino in un luogo in cui sarà facilmente visibile (come la scrivania o su una parete).
-      </p>
-
-      <p>Per approfondire gli altri metodi ti rimando a questo semplice articolo: <a href="/metodi">I vari metodi per utilizzare le parole evocatrici</a>.</p>
-      <p>La tecnica delle parole evocatrici è descritta nel libro di Roberto Assagioli chiamato <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> (p. 62)</p>
-      <p>Se ti senti pronto puoi <a href="/">tornare alla homepage</a> ed iniziare a praticare.</p>
-     
+      <h2>Condividere la pratica</h2>
+      <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
+          dedicandoli una parola il particolare; io lo sto facendo, qui a casa e con i miei amici, e le parole sono sempre ben accette.</p>
+          <p>Buon lavoro e... buon divertimento!</p>
     </main>
 
     <footer>Puoi sostenere questo progetto con una <a href="https://paypal.me/pools/c/8bFReaiLUk">donazione</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
@@ -72,24 +60,22 @@
 <script>
 
 export default {
-  name: 'Tecnica',
+  name: 'Help',
   data: function() {
     return {
     }
   },
-
   created: function() {
-  document.title = 'Parole Evocatrici - Introduzione alla Tecnica delle parole evocatrici.';
-  document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici di Roberto Assagioli, facilmente accessibile online. Lasciati ispirare e inizia a sviluppare le qualità che senti carenti in te o che vuoi deliberatamente sviluppare.';
-  // window.scrollTo(0,0); //// needed because the windwos was not to top... try to belive it
+    document.title = 'Parole Evocatrici - Leggi Psicologiche';
+    document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici ha vari metodi e campi di applicazione: Personale, Collettivo, Sanitario, Solastico e Psicologico.';
+    // window.scrollTo(0,0); //// needed because the windwos was not to top... try to belive it
   },
-
   methods: {
     goToHome: function(w) { 
       if(this.$route.name != 'Home')
         this.$router.push({ name: "Home" });
     },
-        openDonationInfoBox: function() {
+    openDonationInfoBox: function() {
       this.$alert(
         "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
        "🌟 Supporta questo progetto 🌟", 
@@ -114,5 +100,5 @@ export default {
 </script>
 
 <style lang="scss">
-
+ 
 </style>

@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Tecnica from '../views/docs/Tecnica.vue'
 import Metodi from '../views/docs/Metodi.vue'
 import Leggi from '../views/docs/Leggi.vue'
+import Help from '../views/docs/Help.vue'
 
 import Home from '../views/Home.vue'
 import Word from '../views/Word.vue'
@@ -18,6 +19,8 @@ const routes = [
   { path: '/tecnica', name: 'Tecnica', component: Tecnica },
   { path: '/metodi', name: 'Metodi', component: Metodi },
   { path: '/leggi-psicologiche', name: 'Leggi', component: Leggi },
+  { path: '/help', name: 'Help', component: Help },
+
 
   { path: '/random', name: 'Random', component: Random },
   { path: '/newWord', name: 'NewWord', component: NewWord },

@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style lang="scss">
+   .t-center { text-align: center;}
    body {
       max-width: 100%;
       margin: 0; padding: 0;
@@ -80,11 +81,12 @@ export default {
           .istituto {
             img {
               width: 21px; height: 21px;
+              min-width: 21px; min-height: 21px;
             }
           }
 
           .question {
-            padding: .105em;
+            padding: .105em !important;
           }
 
           .donation, .istituto, .menu-items {
@@ -109,6 +111,13 @@ export default {
               text-transform: uppercase;
             }
           }
+    }
+
+    @media screen  and (max-width: 480px) { // spacco il menu in mobile
+      flex-flow: column;
+      justify-content: center;
+
+      .header-menu { margin: .5em 0 0 0; }
     }
   }
 
