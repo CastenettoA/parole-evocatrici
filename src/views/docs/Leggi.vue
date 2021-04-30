@@ -70,13 +70,13 @@
         </p>
 
         <h3>6° legge: L'attenzione, l'interesse, l'affermazione e la ripetizione rafforzano le idee, le immagini e le formazioni psicologiche su cui si accentrano.</h3>
-        <p>Prestare attenzione per qualche minuti ad una <b>parola evocatrice</b> significa esattamente questo, potenziare l'immagine mentale e ne aumenta l'efficacia. Tecnica utilizzata molto bene dai pubblicitari e dai "persuasori".</p>
+        <p>Prestare attenzione per qualche minuto ad una <b>parola evocatrice</b> significa esattamente questo, potenziare l'immagine mentale e ne aumenta l'efficacia. Tecnica utilizzata molto bene dai pubblicitari e dai "persuasori".</p>
         <p>E' bene notare che noi possiamo utilizzare anche la 6° legge in senso opposto, ritirando l'attenzione da un contenuto psicologico sgradito, riducendone così l'energia e l'attività.</p>
 
         <h3>7° legge: La ripetizione degli atti intensifica la tendenza a compierli e rende più faile e migliore la loro esecuzione, fino a che si arriva a poterli compiere inconsciamente.</h3>
         <p>Legge che descrive la formazione delle abitudini. Evidenzia la nostra responsabilità nel valutare le nostre abitudini e decidere eventualmente di modificarle o di crearne di nuove.</p>
         <p>Anche se in parte tendono a limitarci e farci percorrere sentieri già battuti è bene sapere che: "La volontà e l'intelletto possono formare abitudini di pensiero e volontà. Noi siamo responsabili delle nostre abitudini di pensiero e anche quando 
-          agiamo secondoo un'abitudine agiamo liberamente." &mdash; William James</p>
+          agiamo secondo un'abitudine agiamo liberamente." &mdash; William James</p>
 
         <h3>8° legge: Tutte la varie funzioni, e le loro molteplici combinazioni in complessi e sub-personalità, mettono in moto la realizzazione dei loro scopi al di fuori della nostra coscienza, e indipendentemente da, e perfino contro, la nostra volontà.</h3>
         <p><a href="https://amzn.to/3nmT7JA">Rimando al libro per maggiori dettagli.</a> pag 50.</p>

@@ -318,6 +318,10 @@ export default {
     }
   }
 
+  @media screen and (max-width: 764px) { // fix mobile alert to wide (user cant close)
+      .swal2-popup.swal2-modal { width: 80%; }
+  }
+
   // animazione all'hover dei bottoni "pratica con questa parola" in homepage
   @-webkit-keyframes pulse {
   0% {

@@ -63,6 +63,10 @@
       <p>La tecnica delle parole evocatrici è descritta nel libro di Roberto Assagioli chiamato <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> (p. 62). Se non lo conosci 
       ti consiglio vivamente di acquistarlo, personalmente vi ho trovato molti spunti, grandi lezioni di saggezza nonchè l'ispirazione per questa applicazione.</p>
       <p>Se ti senti pronto puoi <a href="/">tornare alla homepage</a> ed iniziare a praticare.</p>
+
+      <h3>Confezioni parole evocatrici 💖</h3>
+      <p>Puoi acquistare un edizione fisica delle parole evocatrici nel sito ufficiale di <a href="http://www.psicosintesi.it/pubblicazioni/opuscoli">psicosintesi.it</a></p>
+    
      
     </main>
 

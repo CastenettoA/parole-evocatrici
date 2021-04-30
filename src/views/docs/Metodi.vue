@@ -77,7 +77,7 @@
 
       <h2>Le parole evocatrici al lavoro e in famiglia</h2>
       <p>Possiamo certamente utilizzare questa tecnica anche nel nostro ambiente di lavoro ed in famiglia. Coinvolgendo le altre persone in esercizi di gruppo 
-        oppure utilizzando l'esercizio del cartoncino, o stramite l'affisione di slogan nei corridoi.</p>
+        oppure utilizzando l'esercizio del cartoncino, o tramite l'affisione di slogan nei corridoi.</p>
         <p> Un esempio pratico può essere quello di esporre la parola <i>Creatività</i> in una sala 
         riunioni, oppure, perchè no, la parola <i>Calma</i> in ambienti dove spesso la tensione fra i partecipanti si fa sentire. Un altra idea è 
         posizionare grande cartoncino con scritto <i>Serenità</i> nelle aree dedicate al relax, oppure arredare la stanza con quadri che evocano l'idea corrispondente.
@@ -86,11 +86,11 @@
       <h2>Le parole evocatrici nella società umana</h2>
       <p>Gli esperti della persuasione ci bombardano ogni giorno con publicità (cartelli di grandi dimensioni, frasi suggestive, 
         slogan, immagini affascinanti, ripetizione martellante, brani musicali), spesso per creare in noi il desiderio di acquistare un prodotto 
-        non necessario</p>
+        non necessario.</p>
       <p>Queste stesse tecniche, che vengono utilizzate così bene per scopi commerciali o politici, potrebbero e dovrebbero venire impiegate per scopi 
         superiori e benefici nei vari livelli della nostra società umana.</p>
       <p>Come dice Assagioli, non sarebbe affatto difficile organizzare una proficua <i>pubblicità psico-spirituale</i> per il miglioramento e l'elevazione 
-      individuale e collettiva dell'umanità</p>
+      individuale e collettiva dell'umanità.</p>
       <p>Personalmente, poco per volta, sto iniziando a regalare dei cartoncini ai miei amici o familiari, spiegando anche la tecnica, e sembrano essere 
         sempre ben accetti.</p>
 
@@ -113,6 +113,9 @@
         <li>Nel campo medico. I cartoncini possono essere utilizzati da persona malate che stanno molto tempo a letto (Pazienza, Confidenza, Pace), o per prepararsi a operazioni chilurghie o anche nella preparazione al parto.</li>
         <li>Nelle relazioni interpersonali e sociali (amici, in famiglia, al lavoro, a scuola, alle riunioni di condominio, nelle assemble, ecc)</li>
       </ol>
+
+      <h3>Confezioni parole evocatrici 💖</h3>
+      <p>Puoi acquistare un edizione fisica delle parole evocatrici nel sito ufficiale di <a href="http://www.psicosintesi.it/pubblicazioni/opuscoli">psicosintesi.it</a></p>
     </main>
 
     <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
