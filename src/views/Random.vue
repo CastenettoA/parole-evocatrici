@@ -58,12 +58,12 @@
         
 
     <div class="pratica">
+          <button class="danger" v-if="userAddedWord" v-on:click="deleteWord()">Elimina questa parola.</button>
 
     <hr>
       <h1>Scegli un metodo ed inizia a praticare</h1>
       
-      <p>Dopo avere letto <a href="/tecnica">come funziona la tecnica</a> non ti resta 
-      che <b>praticare</b> utilizzando uno dei metodi che trovi sotto. Buon lavoro 😁</p>
+      <p>Dopo avere letto <a href="/tecnica">come funziona la tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
 
 
       <div class="methods">
@@ -86,7 +86,11 @@
         <transition name="fade">
               <div class="open-method" v-show="visibleMethod == 'method1'" id="method1">
                 <h3>#1 Metodo del cartoncino</h3>
-                <p>Questo metodo è molto semplice: Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. Successivamente posiziona il cartoncino in un luogo che frequenti spesso. <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi.</small> <a target="_blank" href="demo">(esempi e approfondimento)</a></p>
+                <p>Questo metodo è molto semplice da applicare eppure molto efficace.</p>
+                <p><b>Istruzioni</b> &mdash; Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. 
+                  Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
+                  <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
+                    frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
               </div>
         </transition>
 
@@ -109,7 +113,9 @@
 
       <div class="open-method" v-show="visibleMethod == 'method2'" id="method2">
         <h3>#2 Metodo dell'attenzione cosciente</h3>
-        <p>Concentrarti e prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora rilassati e segui questi punti:</p>
+        <p>Concentrarsi e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. 
+          Ora rilassati e segui questi punti:</p>
+          <p><b>Tecnica</b> &mdash;</p>
         <ol>
           <li>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. 
             <br>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala aggiorare e prendine nota.</li><br>
@@ -118,14 +124,13 @@
           <li>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</li><br>
           <li>Scrivi la parola diverse volte.</li>
         </ol>
-        <p><a target="_blank" href="demo">(esempi e approfondimento)</a></p>
+        <small>A seconda delle tue esigenze, dei tuoi scopi, e del tuo tipo psicologico (pag. 185 del <a href="https://amzn.to/3nmT7JA">libro</a>) puoi scegliere di personalizzare questo esercizio, rimuovendo dei punti o utilizzando solo quelli che ritieni più efficaci per la tua situazione.</small>
       </div>
 
-          <details> 
+      <details> 
         <summary>Sul condividere la pratica 🥳🎉🎉</summary>       
         <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
-          dedicandoli una parola in particolare; io stesso lo sto facendo, qui a casa e con i miei amici, 
-          e noto con piacere che le parole sono sempre ben accette!</p>
+          dedicandoli una parola in particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e noto con piacere che le parole sono sempre ben accette!</p>
           <h4>Come condividere?</h4>
           <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in particolare da dedicare e condividerla.</p>
         </details>
@@ -146,10 +151,17 @@
    
        
         </details>
+             
     </div>
 
 
-    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+    <footer>Puoi sostenere questo progetto e futuri sviluppi con una 
+      <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo 
+      via <a href="mailto:castenetto.andrea@gmail.com">email</a>. 
+      <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a>
+      <br><br><small>Un grande grazie va tutto il 'movimento psicosintetico', a psicosintesi.it, a Roberto Assagioli,
+         e al suo libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a>.</small>
+      </footer>
   </div>
 </template>
 
@@ -206,21 +218,25 @@ export default {
     this.currentWord = this.basicWords[0];
   },
   methods: {
-        openDonationInfoBox: function() {
+       openDonationInfoBox: function() {
       this.$alert(
         "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
        "🌟 Supporta questo progetto 🌟", 
        "info", 
-         { confirmButtonText: '<a href="https://www.patreon.com/castenettoa" style="color: #fff">Supportami su Patreon 🚀</a>' }
-      );
+         { confirmButtonText: 'Supportami su Patreon 🚀' }
+      ).then(function() {
+        location.href = 'https://www.patreon.com/castenettoa';
+      });
     },
     openIstitutoInfoBox: function() {
       this.$alert(
         "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
-         { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }
-      );
+         { confirmButtonText: 'Vai su psicosintesi.it 🚀' }
+      ).then(function() {
+        location.href = 'http://www.psicosintesi.it';
+      });
     },
     goToinfoPage: function(w) { 
       if(this.$route.name != 'Help')

@@ -153,7 +153,14 @@
              
     </div>
 
-    <footer>Puoi sostenere questo progetto e futuri sviluppi con una <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo via <a href="mailto:castenetto.andrea@gmail.com">email</a>. <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a></footer>
+        
+<footer>Puoi sostenere questo progetto e futuri sviluppi con una 
+      <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo 
+      via <a href="mailto:castenetto.andrea@gmail.com">email</a>. 
+      <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a>
+      <br><br><small>Un grande grazie va tutto il 'movimento psicosintetico', a psicosintesi.it, a Roberto Assagioli,
+         e al suo libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a>.</small>
+      </footer>
   </div>
 </template>
 
@@ -201,21 +208,25 @@ export default {
     }
   },
   methods: {
-        openDonationInfoBox: function() {
+      openDonationInfoBox: function() {
       this.$alert(
         "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
        "🌟 Supporta questo progetto 🌟", 
        "info", 
-         { confirmButtonText: '<a href="https://www.patreon.com/castenettoa" style="color: #fff">Supportami su Patreon 🚀</a>' }
-      );
+         { confirmButtonText: 'Supportami su Patreon 🚀' }
+      ).then(function() {
+        location.href = 'https://www.patreon.com/castenettoa';
+      });
     },
     openIstitutoInfoBox: function() {
       this.$alert(
         "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
        "🌟 La Psicosintesi 🌟", 
        "info", 
-         { confirmButtonText: '<a href="http://www.psicosintesi.it/" style="color: #fff">Vai su psicosintesi.it 🚀</a>' }
-      );
+         { confirmButtonText: 'Vai su psicosintesi.it 🚀' }
+      ).then(function() {
+        location.href = 'http://www.psicosintesi.it';
+      });
     },
     goToinfoPage: function(w) { 
       if(this.$route.name != 'Help')
