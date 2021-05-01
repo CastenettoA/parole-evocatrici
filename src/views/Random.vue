@@ -218,26 +218,37 @@ export default {
     this.currentWord = this.basicWords[0];
   },
   methods: {
-       openDonationInfoBox: function() {
-      this.$alert(
-        "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
-       "🌟 Supporta questo progetto 🌟", 
-       "info", 
-         { confirmButtonText: 'Supportami su Patreon 🚀' }
-      ).then(function() {
-        location.href = 'https://www.patreon.com/castenettoa';
+    openDonationInfoBox: function() {
+      this.$swal({
+        title: "🌟 Supporta questo progetto 🌟", 
+        html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
+         showCloseButton: true,
+          showCancelButton: true,
+        focusConfirm: true,
+        confirmButtonText:
+          'Si, effettuo una donazione 🚀',
+        cancelButtonText: 'No, grazie.'
+      }).then(function(r) {
+        if(r.isConfirmed)
+          location.href = 'https://paypal.me/pools/c/8bFReaiLUk';
       });
     },
     openIstitutoInfoBox: function() {
-      this.$alert(
-        "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. Naturalmente un grande aiuto può essere dato dalla <<psicosintesi didattica>>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
-       "🌟 La Psicosintesi 🌟", 
-       "info", 
-         { confirmButtonText: 'Vai su psicosintesi.it 🚀' }
-      ).then(function() {
-        location.href = 'http://www.psicosintesi.it';
+            this.$swal({
+        title: "🌟 La Psicosintesi 🌟", 
+        html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
+         showCloseButton: true,
+          showCancelButton: true,
+        focusConfirm: true,
+        confirmButtonText:
+          'Vai su psicosintesi.it 🚀',
+        cancelButtonText: 'No, grazie.'
+      }).then(function(r) {
+        if(r.isConfirmed)
+          location.href = 'http://www.psicosintesi.it';
       });
     },
+    
     goToinfoPage: function(w) { 
       if(this.$route.name != 'Help')
         this.$router.push({ name: "Help" });
