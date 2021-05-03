@@ -118,7 +118,7 @@
           <p><b>Tecnica</b> &mdash;</p>
         <ol>
           <li>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. 
-            <br>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala aggiorare e prendine nota.</li><br>
+            <br>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala affiorare e prendine nota.</li><br>
           <li>Rifletti sul significato della parola, e annota i risultati.</li><br>
           <li>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</li><br>
           <li>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</li><br>
