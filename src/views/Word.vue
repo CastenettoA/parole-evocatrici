@@ -311,10 +311,10 @@ export default {
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
            <p style="font-size: 15px;">Concentrarti e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
-           <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti.</p>
-           <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala affiorare e prendine nota.</p>
+           <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
+           <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
            </div>`,
-          confirmButtonText: 'Sprossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
         },
         {
           title: 'Il metodo dell\'attenzione cosciente',
@@ -324,9 +324,9 @@ export default {
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
           
            
-           <p>Rifletti sul significato della parola, e annota i risultati.</p>
+           <p>Rifletti sul significato della parola e annota i risultati.</p>
            </div>`,
-          confirmButtonText: 'Sprossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
         },
         {
           title: 'Il metodo dell\'attenzione cosciente',
@@ -334,11 +334,10 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-             <p style="font-size: 15px;">Concentrarti e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
-           <p><b>Step 3</b></p><hr>
+           
            <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
            </div>`,
-          confirmButtonText: 'Sprossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
         },
         {
           title: 'Il metodo dell\'attenzione cosciente',
@@ -346,11 +345,10 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-             <p style="font-size: 15px;">Concentrarti e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
-           <p><b>Step 4</b></p><hr>
+           
            <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
            </div>`,
-          confirmButtonText: 'Sprossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
         },
         {
           title: 'Il metodo dell\'attenzione cosciente',
@@ -358,8 +356,7 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-             <p style="font-size: 15px;">Concentrarti e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
-           <p><b>Step 5</b></p><hr>
+           
            <p>Scrivi la parola diverse volte.</p>
            </div>`,
           confirmButtonText: 'Concludi Esercizio &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
@@ -372,8 +369,10 @@ export default {
              showCloseButton: true,
             title: 'Congratulazioni! 🎊',
             html: ` <div style="text-align: left;">
-              <small>Ora che hai concluso la pratica puoi provare il <b>secondo metodo</b> oppure leggere più in basso dei consigli pratici 
-              sul ritmo con cui eseguire questa pratica.</small>
+              <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
+              <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto nonchè molto probabilmente sentirai anche maggiori benefici.</p>
+              <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/tecnica">L'introduzione alla tecnica</a> 
+              oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
               </div>
             `,
             confirmButtonText: 'Torna al sito'
