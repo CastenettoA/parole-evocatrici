@@ -85,7 +85,7 @@ export default {
   methods: {
     openDonationInfoBox: function() {
       this.$swal({
-        title: "🌟 Supporta questo progetto 🌟", 
+        title: "🌟 Supporta questo progetto", 
         html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
          showCloseButton: true,
           showCancelButton: true,
@@ -100,7 +100,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
             this.$swal({
-        title: "🌟 La Psicosintesi 🌟", 
+        title: "🌟 La Psicosintesi", 
         html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
          showCloseButton: true,
           showCancelButton: true,
@@ -138,7 +138,7 @@ export default {
 
       
       if(userWords && userWords.includes(this.newWord)) { // la parola esiste gia, mostro l'errore
-        this.$alert('La parola ' + this.newWord + ' esite già nel sito; prova con una parola differente', 'La parola esiste già.', 'warning');
+        this.$swal('La parola esiste già.', 'La parola ' + this.newWord + ' esite già nel sito; prova con una parola differente', 'warning');
 
       } else { // aggiungo la parola
           let w = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : '';
@@ -152,7 +152,7 @@ export default {
           this.addToFavorites(this.newWord); // aggiungo la p. ai favoriti
 
           // mostro un alert di conferma
-          this.$alert("La parola " + this.newWord + ' è stata aggiunta correttamente.', 'Parola Aggiunta.','success').then(() => {
+          this.$swal('Parola Aggiunta.', "La parola " + this.newWord + ' è stata aggiunta correttamente.','success').then(() => {
             this.goToHome(); // reindirizzo l'utente alla home page dopo l'infobox
           });
       }

@@ -58,9 +58,8 @@
         
 
     <div class="pratica">
-          <button class="danger" v-if="userAddedWord" v-on:click="deleteWord()">Elimina questa parola.</button>
-
-    <hr>
+      <hr>
+      
       <h1>Scegli un metodo ed inizia a praticare</h1>
       
       <p>Dopo avere letto <a href="/tecnica">come funziona la tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
@@ -77,22 +76,11 @@
           <div class="content">
             <h3>#1 Metodo del cartoncino</h3>
             <p>E' il metodo più semplice per iniziare a praticare la tecnica delle parole evocatrici.</p>
-            <button v-on:click="visibleMethod = 'method1'; scrollToMethod('method1')">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <button v-on:click="open_m1_dialog()">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
           </svg></button>
           </div>
         </div>
-        
-        <transition name="fade">
-              <div class="open-method" v-show="visibleMethod == 'method1'" id="method1">
-                <h3>#1 Metodo del cartoncino</h3>
-                <p>Questo metodo è molto semplice da applicare eppure molto efficace.</p>
-                <p><b>Istruzioni</b> &mdash; Ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. 
-                  Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
-                  <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
-                    frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
-              </div>
-        </transition>
 
         <div class="method">
           <div class="icon">
@@ -104,27 +92,11 @@
           <div class="content">
             <h3>#2 Metodo dell'attenzione cosciente</h3>
             <p>Questo metodo, dove prestiamo coscientemente attenzione alla parola, reppresenta un metodo ancora più efficace.</p>
-            <button v-on:click="visibleMethod = 'method2'; scrollToMethod('method2')">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <button v-on:click="open_m2_dialog()">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
           </svg></button>
           </div>
         </div>
-      </div>
-
-      <div class="open-method" v-show="visibleMethod == 'method2'" id="method2">
-        <h3>#2 Metodo dell'attenzione cosciente</h3>
-        <p>Concentrarsi e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. 
-          Ora rilassati e segui questi punti:</p>
-          <p><b>Tecnica</b> &mdash;</p>
-        <ol>
-          <li>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. 
-            <br>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciala affiorare e prendine nota.</li><br>
-          <li>Rifletti sul significato della parola, e annota i risultati.</li><br>
-          <li>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</li><br>
-          <li>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</li><br>
-          <li>Scrivi la parola diverse volte.</li>
-        </ol>
-        <small>A seconda delle tue esigenze, dei tuoi scopi, e del tuo tipo psicologico (pag. 185 del <a href="https://amzn.to/3nmT7JA">libro</a>) puoi scegliere di personalizzare questo esercizio, rimuovendo dei punti o utilizzando solo quelli che ritieni più efficaci per la tua situazione.</small>
       </div>
 
       <details> 
@@ -220,7 +192,7 @@ export default {
   methods: {
     openDonationInfoBox: function() {
       this.$swal({
-        title: "🌟 Supporta questo progetto 🌟", 
+        title: "🌟 Supporta questo progetto", 
         html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
          showCloseButton: true,
           showCancelButton: true,
@@ -235,7 +207,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
             this.$swal({
-        title: "🌟 La Psicosintesi 🌟", 
+        title: "🌟 La Psicosintesi", 
         html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
          showCloseButton: true,
           showCancelButton: true,
@@ -253,17 +225,6 @@ export default {
       if(this.$route.name != 'Help')
         this.$router.push({ name: "Help" });
     },
-    scrollToMethod(id) {
-
-      setTimeout(function() { //scroll to method
-        let yourElement = document.getElementById(id);
-        let y = (yourElement.getBoundingClientRect().top + window.pageYOffset) - 50; // -50 for better context
-
-        window.scrollTo({top: y, behavior: 'smooth'});
-      }, 80); // sadly i need a settimeout to make work. althrogouht scoll not work because is to fast and the v-show isn't.... 
-
-    },
-
     goToWord: function(currentWord) {
       this.$router.push({ name: "Word", params: { word: currentWord.word, color: currentWord.color, starred: currentWord.starred } });
     },
@@ -285,6 +246,142 @@ export default {
          f.splice(f.indexOf(word), 1);
          localStorage.setItem('favoriteWords', f);
       }
+    },
+
+        open_m1_dialog: function() {
+      this.$swal.mixin({
+        // input: 'text',
+        // confirmButtonText: 'Next &rarr;',
+        // showCancelButton: true,
+        // progressSteps: ['1']
+        
+      }).queue([
+        {
+          title: 'Il metodo del cartoncino',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          <br><br><small style="display: inline-block;">Questo metodo è molto semplice da applicare eppure molto efficace.</small> 
+
+          <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
+                  Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
+                  <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
+                    frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
+           </div>`,
+          confirmButtonText: 'Concludi l\'esercizio &rarr;', showCloseButton: true,
+          progressSteps: ['1'], currentProgressStep: 0,
+
+       
+       
+        },
+        // {
+        //   title: 'Question 2',
+        //   text: 'Chaining swal2 modals is easy',
+        //   confirmButtonText: 'next &rarr;', showCloseButton: true,
+        //   progressSteps: ['1', '2', '3'], currentProgressStep: 1,
+        // },
+        // {
+        //   title: 'Question 3',
+        //   text: 'Chaining swal2 modals is easy',
+        //   confirmButtonText: 'next &rarr;', showCloseButton: true,
+        //   progressSteps: ['1', '2', '3'], currentProgressStep: 2,
+        // },
+      ]).then((result) => {
+        if (result.value) {
+          const answers = JSON.stringify(result.value)
+          this.$swal.fire({
+             showCloseButton: true,
+            title: 'Congratulazioni! 🎊',
+            html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare il <b>secondo metodo</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui eseguire questa pratica.</small>
+              </div>
+            `,
+            confirmButtonText: 'Torna al sito'
+          })
+        }
+      })
+    },
+
+    open_m2_dialog: function() {
+      this.$swal.mixin().queue([
+        {
+          title: 'Il metodo dell\'attenzione cosciente',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
+          
+           <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
+           <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
+           </div>`,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
+        },
+        {
+          title: 'Il metodo dell\'attenzione cosciente',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          
+           
+           <p>Rifletti sul significato della parola e annota i risultati.</p>
+           </div>`,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
+        },
+        {
+          title: 'Il metodo dell\'attenzione cosciente',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+           
+           <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
+           </div>`,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
+        },
+        {
+          title: 'Il metodo dell\'attenzione cosciente',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+           
+           <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
+           </div>`,
+          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
+        },
+        {
+          title: 'Il metodo dell\'attenzione cosciente',
+          html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+           
+           <p>Scrivi la parola diverse volte.</p>
+           </div>`,
+          confirmButtonText: 'Concludi Esercizio &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
+        },
+
+      ]).then((result) => {
+        if (result.value) {
+          const answers = JSON.stringify(result.value)
+          this.$swal.fire({
+             showCloseButton: true,
+            title: 'Congratulazioni! 🎊',
+            html: ` <div style="text-align: left;">
+              <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
+              <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto e sentirai maggiori benefici.</p>
+              <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/tecnica">L'introduzione alla tecnica</a> 
+              oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
+              </div>
+            `,
+            confirmButtonText: 'Torna al sito'
+          })
+        }
+      })
     },
   }
 }

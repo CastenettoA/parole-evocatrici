@@ -183,7 +183,7 @@ export default {
   methods: {
     openDonationInfoBox: function() {
       this.$swal({
-        title: "🌟 Supporta questo progetto 🌟", 
+        title: "🌟 Supporta questo progetto", 
         html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
          showCloseButton: true,
           showCancelButton: true,
@@ -198,7 +198,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
             this.$swal({
-        title: "🌟 La Psicosintesi 🌟", 
+        title: "🌟 La Psicosintesi", 
         html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
          showCloseButton: true,
           showCancelButton: true,
@@ -228,7 +228,7 @@ export default {
       localStorage.setItem('favoriteWords', favWord);
 
       // mostro alert
-      this.$alert('La parola ' + this.currentWord + ' è stata eliminata correttamente', 'Parola Eliminata.','success').then(() => {
+      this.$swal('Parola Eliminata.', 'La parola ' + this.currentWord + ' è stata eliminata correttamente', 'success').then(() => {
         this.goToHome(); // reindirizzo l'utente alla home page dopo l'infobox
       });
     },
@@ -261,7 +261,7 @@ export default {
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
           <br><br><small style="display: inline-block;">Questo metodo è molto semplice da applicare eppure molto efficace.</small> 
 
-          <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivici sopra di esso la parola che hai scelto. 
+          <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
                   Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
                   <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
                     frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
@@ -309,7 +309,7 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-           <p style="font-size: 15px;">Concentrarti e prestare attenzione coscientemente alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
+           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
@@ -370,7 +370,7 @@ export default {
             title: 'Congratulazioni! 🎊',
             html: ` <div style="text-align: left;">
               <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
-              <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto nonchè molto probabilmente sentirai anche maggiori benefici.</p>
+              <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto e sentirai maggiori benefici.</p>
               <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/tecnica">L'introduzione alla tecnica</a> 
               oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
               </div>
