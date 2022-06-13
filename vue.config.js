@@ -5,7 +5,7 @@ module.exports = defineConfig({
     name: 'Parole Evocatrici',
     themeColor: '#4DBA87', // slate green
   },
-  // workboxOptions: {
-  //   exclude: [/_redirects/]
-  // }
+  workboxOptions: {
+    exclude: [/_redirects/]
+  }
 })
