@@ -35,7 +35,7 @@
 
         <h1>Sviluppa le tue qualità</h1>
         <h3>con una tecnica semplice, facile da applicare, ed allo stesso tempo molto efficace.</h3>
-        <p class="summary">⚠️ Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici</a>.
+        <p class="summary">⚠️ Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici</a>.</p>
         <br><br>
         <p>🔥 Per iniziare seleziona una parola sotto, oppure <a href="/random">ottienine una casuale</a> o <a href="/newWord">aggiungine una nuova</a>.
         <small style="text-transform: uppercase; font-weight: bold; font-style: italic; opacity: .5; margin-left: .3em;">Let's Go!</small></p>
@@ -136,7 +136,7 @@ export default {
       });
     },
     openIstitutoInfoBox: function() {
-            this.$swal({
+      this.$swal({
         title: "🌟 La Psicosintesi", 
         html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
          showCloseButton: true,

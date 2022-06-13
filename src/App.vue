@@ -5,8 +5,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: 'App',
   data: function() {
@@ -128,8 +126,7 @@ export default {
   .logo-wrapper {
     display: inline-flex;
     align-items: center;
-    // background-color: rgba(246, 127, 114, .11%); 
-    background-color: rgba(0,0,0, .11%);
+    background-color: rgba(0,0,0, .1);
     padding: 0.3em 16px;
     border-radius: 30px;
     cursor: pointer;
@@ -138,7 +135,7 @@ export default {
     img { display: flex; justify-content: center; align-items: center;}
 
     &:hover {
-      background-color: rgba(0,0,0, .29%); 
+      background-color: rgba(0,0,0, .29); 
     }
 
     .title {

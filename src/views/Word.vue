@@ -246,16 +246,10 @@ export default {
       }
     },
     open_m1_dialog: function() {
-      this.$swal.mixin({
-        // input: 'text',
-        // confirmButtonText: 'Next &rarr;',
-        // showCancelButton: true,
-        // progressSteps: ['1']
-        
-      }).queue([
-        {
-          title: 'Il metodo del cartoncino',
-          html: `  
+      let w1 = this.$swal;
+      this.$swal({
+        title: 'Il metodo del cartoncino',
+         html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
@@ -266,28 +260,11 @@ export default {
                   <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
                     frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
            </div>`,
-          confirmButtonText: 'Concludi l\'esercizio &rarr;', showCloseButton: true,
-          progressSteps: ['1'], currentProgressStep: 0,
-
-       
-       
-        },
-        // {
-        //   title: 'Question 2',
-        //   text: 'Chaining swal2 modals is easy',
-        //   confirmButtonText: 'next &rarr;', showCloseButton: true,
-        //   progressSteps: ['1', '2', '3'], currentProgressStep: 1,
-        // },
-        // {
-        //   title: 'Question 3',
-        //   text: 'Chaining swal2 modals is easy',
-        //   confirmButtonText: 'next &rarr;', showCloseButton: true,
-        //   progressSteps: ['1', '2', '3'], currentProgressStep: 2,
-        // },
-      ]).then((result) => {
-        if (result.value) {
-          const answers = JSON.stringify(result.value)
-          this.$swal.fire({
+          confirmButtonText: 'Concludi l\'esercizio &rarr;', 
+          showCloseButton: true
+      }).then(function(r) {
+        console.log(r);
+         w1.fire({
              showCloseButton: true,
             title: 'Congratulazioni! 🎊',
             html: ` <div style="text-align: left;">
@@ -297,15 +274,21 @@ export default {
             `,
             confirmButtonText: 'Torna al sito'
           })
-        }
-      })
+      });
     },
+    async open_m2_dialog() {
+      const steps = ['1', '2', '3']
+      const Queue = this.$swal.mixin({
+        progressSteps: steps,
+        confirmButtonText: 'Next >',
+        // optional classes to avoid backdrop blinking between steps
+        showClass: { backdrop: 'swal2-noanimation' },
+        hideClass: { backdrop: 'swal2-noanimation' }
+      })
 
-    open_m2_dialog: function() {
-      this.$swal.mixin().queue([
-        {
-          title: 'Il metodo dell\'attenzione cosciente',
-          html: `  
+      await Queue.fire({ // 5 times
+        title: 'Il metodo dell\'attenzione cosciente',
+        html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
@@ -314,70 +297,71 @@ export default {
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
            </div>`,
-          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
-        },
-        {
-          title: 'Il metodo dell\'attenzione cosciente',
-          html: `  
-          <div style="text-align: left;">
-            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+                 confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
+        // optional class to show fade-in backdrop animation which was disabled in Queue mixin
+        showClass: { backdrop: 'swal2-noanimation' },
+      })
+      await Queue.fire({
+        html: `  
+        <div style="text-align: left;">
+          <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+        
           
-           
-           <p>Rifletti sul significato della parola e annota i risultati.</p>
-           </div>`,
-          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
-        },
-        {
-          title: 'Il metodo dell\'attenzione cosciente',
-          html: `  
-          <div style="text-align: left;">
-            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-           
-           <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
-           </div>`,
-          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
-        },
-        {
-          title: 'Il metodo dell\'attenzione cosciente',
-          html: `  
-          <div style="text-align: left;">
-            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-           
-           <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
-           </div>`,
-          confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
-        },
-        {
-          title: 'Il metodo dell\'attenzione cosciente',
-          html: `  
-          <div style="text-align: left;">
-            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-           
-           <p>Scrivi la parola diverse volte.</p>
-           </div>`,
-          confirmButtonText: 'Concludi Esercizio &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
-        },
+          <p>Rifletti sul significato della parola e annota i risultati.</p>
+          </div>`,
+        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
+          showClass: { backdrop: 'swal2-noanimation' },
+      })
+      await Queue.fire({
+        title: 'Il metodo dell\'attenzione cosciente',
+        html: `  
+        <div style="text-align: left;">
+          <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          
+          <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
+          </div>`,
+        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
+        showClass: { backdrop: 'swal2-noanimation' },
+      })
+      await Queue.fire({
+        title: 'Il metodo dell\'attenzione cosciente',
+        html: `  
+        <div style="text-align: left;">
+          <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          
+          <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
+          </div>`,
+        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
+        showClass: { backdrop: 'swal2-noanimation' },
+      })
 
-      ]).then((result) => {
-        if (result.value) {
-          const answers = JSON.stringify(result.value)
-          this.$swal.fire({
-             showCloseButton: true,
-            title: 'Congratulazioni! 🎊',
-            html: ` <div style="text-align: left;">
+      await Queue.fire({
+        title: 'Il metodo dell\'attenzione cosciente',
+        html: `  
+        <div style="text-align: left;">
+          <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          
+          <p>Scrivi la parola diverse volte.</p>
+          </div>`,
+        confirmButtonText: 'Concludi Esercizio &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
+        showClass: { backdrop: 'swal2-noanimation' },
+      })
+
+      await Queue.fire({
+        title: 'Congratulazioni! 🎊',
+        html: ` <div style="text-align: left;">
               <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
               <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto e sentirai maggiori benefici.</p>
               <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/tecnica">L'introduzione alla tecnica</a> 
               oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
               </div>
             `,
-            confirmButtonText: 'Torna al sito'
-          })
-        }
+        confirmButtonText: 'Torna al sito &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
+        showClass: { backdrop: 'swal2-noanimation' },
       })
     },
     goToHome: function(w) { 
