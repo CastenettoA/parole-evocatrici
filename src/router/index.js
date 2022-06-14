@@ -12,6 +12,10 @@ import Word from '../views/Word.vue'
 import NewWord from '../views/NewWord.vue'
 import Random from '../views/Random.vue'
 
+// blog & blog pages (I know..)
+import Blog from '../views/blog/Blog.vue'
+import BlogPWA1 from '../views/blog/article/BlogPWA1.vue'
+
 const routes = [
   { path: '/', name: 'Home', component: Home },
 
@@ -27,8 +31,12 @@ const routes = [
   { path: '/word/:word', name: 'Word', component: Word },
 
   // page not found component
-  {  path: '/:pathMatch(.*)*', name: 'pagenotfound', component: Home } 
+  {  path: '/:pathMatch(.*)*', name: 'pagenotfound', component: Home },
 
+  // blog & blog pages
+  { path: '/blog', name: 'Blog', component: Blog },
+  // { path: '/blog:ppost', name: 'Blog', component: Blog }, // sub-routes
+  { path: '/blog/parole-evocatrici.com-e-una-pwa', name: 'BlogPWA1', component: BlogPWA1 }, //Blog-title-postNumber 
 ]
 
 const router = createRouter({
