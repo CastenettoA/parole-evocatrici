@@ -1,7 +1,7 @@
 <template>
-  <div class="home-view">
+  <div class="home-view-real">
     <nav>
-      <section>
+      <section class="homepage">
         <div class="logo">
           <div class="logo-wrapper" @click="goToHome()">
           <div class="img">
@@ -20,10 +20,7 @@
                   </svg>
                 </div>
 
-                <div class="istituto" v-on:click="openIstitutoInfoBox()">
-                  <!-- <img src="@/assets/istituto-psico-sintesi.png"> -->
-                  <img :src="require('@/assets/img/istituto-psicosintesi-white.png')"/>
-                </div>
+
 
                 <div class="donation question" v-on:click="goToinfoPage()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
@@ -34,11 +31,9 @@
         </div>
 
         <h1>Sviluppa le tue qualità</h1>
-        <h3>con una tecnica semplice, facile da applicare, ed allo stesso tempo molto efficace.</h3>
-        <p class="summary">⚠️ Se non conosci questa tecnica, prima di praticare, ti consiglio di leggere l'<a href="/tecnica">introduzione alla tecnica delle parole evocatrici</a>.</p>
-        <br><br>
-        <p>🔥 Per iniziare seleziona una parola sotto, oppure <a href="/random">ottienine una casuale</a> o <a href="/newWord">aggiungine una nuova</a>.
-        <small style="text-transform: uppercase; font-weight: bold; font-style: italic; opacity: .5; margin-left: .3em;">Let's Go!</small></p>
+        <h3 class="subtitle">con una tecnica semplice, facile da applicare, ed allo stesso tempo molto efficace.</h3>
+        <h3 class="last"> Per praticare seleziona una parola sotto, oppure <a href="/random">ottienine una casuale</a> o <a href="/newWord">aggiungine una nuova</a>.
+        <small style="text-transform: uppercase; font-weight: bold; font-style: italic; opacity: .5; margin-left: .3em;">Let's Go!</small></h3>
       </section>
     </nav>
 
@@ -90,7 +85,7 @@ export default {
   },
   created: function() {
     document.title = 'Parole Evocatrici - Risveglia e sviluppa le tue qualità latenti.';
-    document.getElementsByTagName('meta')["description"].content = 'La tecnica delle parole evocatrici di Roberto Assagioli, facilmente accessibile online. Lasciati ispirare e inizia a sviluppare le qualità che senti carenti in te o che vuoi deliberatamente sviluppare.';
+    document.getElementsByTagName('meta')["description"].content = 'parole-evocatrici.com è un servizio che ti permette di allenare e stimolare le tue qualità interiori direttamente online.';
     window.scrollTo(0,0); // needed because the windwos was not to top... try to belive it
 
     // (1) controllo se l'utente ha aggiunto delle parole (2) inserisco le parole nella lista

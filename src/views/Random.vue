@@ -20,10 +20,7 @@
                   </svg>
                 </div>
 
-                <div class="istituto" v-on:click="openIstitutoInfoBox()">
-                  <!-- <img src="@/assets/istituto-psico-sintesi.png"> -->
-                  <img :src="require('@/assets/img/istituto-psicosintesi-white.png')"/>
-                </div>
+
 
                 <div class="donation question" v-on:click="goToinfoPage()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
@@ -205,21 +202,7 @@ export default {
           location.href = 'https://paypal.me/pools/c/8bFReaiLUk';
       });
     },
-    openIstitutoInfoBox: function() {
-            this.$swal({
-        title: "🌟 La Psicosintesi", 
-        html:  "Questo metodo, sviluppando le qualità e funzioni deficienti e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
-         showCloseButton: true,
-          showCancelButton: true,
-        focusConfirm: true,
-        confirmButtonText:
-          'Vai su psicosintesi.it 🚀',
-        cancelButtonText: 'No, grazie.'
-      }).then(function(r) {
-        if(r.isConfirmed)
-          location.href = 'http://www.psicosintesi.it';
-      });
-    },
+
     
     goToinfoPage: function(w) { 
       if(this.$route.name != 'Help')
