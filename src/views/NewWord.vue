@@ -53,19 +53,12 @@
          garantirti la durata effettiva nel tuo browser web.<br> <br> Detto questo, buona pratica :)</p>
     </div>  
         
-<footer>Puoi sostenere questo progetto e futuri sviluppi con una 
-      <a href="https://www.patreon.com/castenettoa">donazione ❤️</a>.<br> Se vuoi inviarmi un feedback fallo 
-      via <a href="mailto:castenetto.andrea@gmail.com">email</a>. 
-      <br> <a href="#top">Torna su ⬆</a> • <a href="https://castenettoa.com" title="creato da Andrea Castenetto">castenettoa.com</a>
-      <br><br><small>Un grande grazie va tutto il 'movimento psicosintetico', a psicosintesi.it, a Roberto Assagioli,
-         e al suo libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a>.</small>
-      </footer>
+<FooterMain></FooterMain>
   </div>
 </template>
 
 <script>
 // 'Ammirazione Apprezzamento Attenzione Bellezza Beatitudine Calma Compassione Comprensione Collaborazione Coraggio Creatività Audacia Decisione Distacco Determinazione Discernimento Disciplina Energia Decisione Distacco Determinazione Discernimento Disciplina Energia Entusiasmo Eternità Fede Libertà Amicizia Generosità Bontà Volontà buona Gratitudine Armonia Umorismo Inclusività Infinito Iniziativa Integrazione Gioia Liberazione Luce Amore Ordine Pazienza Pace Costanza Positività Forza Prontezza Quiete Realtà Rinnovamento Risolutezza Serenità Servizio Silenzio Semplicità Sintesi Tenacia Verità Comprensione Universalità Vitalità Interezza Volontà Saggezza Stupore'
-
 export default {
   name: 'NewWord',
   data: function() {
@@ -120,7 +113,6 @@ export default {
 
       if(userWords)
         this.basicWords.push(...userWords);
-
       
       if(userWords && userWords.includes(this.newWord)) { // la parola esiste gia, mostro l'errore
         this.$swal('La parola esiste già.', 'La parola ' + this.newWord + ' esite già nel sito; prova con una parola differente', 'warning');
