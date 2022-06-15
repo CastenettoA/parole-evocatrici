@@ -6,6 +6,7 @@ module.exports = defineConfig({
     themeColor: '#4DBA87', // slate green
     workboxOptions: {
       exclude: [/_redirects/]
-    }
+    },
+    assetsVersion: 1 // against cache
   }
 })
