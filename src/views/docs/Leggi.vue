@@ -30,12 +30,12 @@
           </div>
         </div>
 
-      <p class="summary t-center">Le 10 leggi psicologiche di <b>Roberto Assagioli</b>.</p>
+                <h1>Le leggi psicologiche</h1>
+        <p class="summary">Le 10 leggi psicologiche di <b>Roberto Assagioli</b>.</p>
       </section>
     </nav>
 
     <main class="pratica">
-      <h1>Le leggi psicologiche</h1>
        <p>Così come il mondo fisico esistono delle leggi, anche il nostro funzionamento psichico è governato da altrettante <i>leggi psicologiche</i>.</p>
        <p>Conoscere queste leggi significa innanzitutto essere più coscienti dei nostri meccanismi interni e 
          ci consente di utilizzare queste stesse leggi a nostro favore; ad esempio, la <a href="/spiegazione-tecnica-parole-evocatrici">tecnica delle parole evocatrici</a> fa largo uso di queste leggi.</p>

@@ -30,12 +30,13 @@
           </div>
         </div>
 
-      <p class="summary t-center">Breve introduzione alla tecnica della parole evocatrici di <b>Roberto Assagioli</b>.</p>
+        <h1>Metodi, Modalità e Campi di applicazione della tecnica delle parole evocatrici</h1>
+        <p class="summary">Breve introduzione alla tecnica della parole evocatrici di <b>Roberto Assagioli</b> dal punto di 
+        vista dei differenti metodi e campi di applicazione pratici.</p>
       </section>
     </nav>
 
     <main class="pratica">
-      <h1>Metodi, Modalità e Campi di applicazione della tecnica delle parole evocatrici</h1>
       <p>Questa tecnica può essere utilizzata in vari modi e modificata creativamente per adeguarla alle tue esigenze particolari. 
         Qui sotto trovi i metodi principali estratti dal libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli, pagina 62-3.
       </p>

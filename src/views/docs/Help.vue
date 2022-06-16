@@ -30,12 +30,12 @@
           </div>
         </div>
 
-      <p class="summary t-center">"La libertà dell'uomo è definitiva ed immediata se così egli vuole; essa non dipende da vittorie esterne ma interne." &mdash; Yogananda Paramahansa</p>
+          <h1>Come utilizzare questa Web App</h1>
+        <p class="summary">"La libertà dell'uomo è definitiva ed immediata se così egli vuole; essa non dipende da vittorie esterne ma interne." &mdash; Yogananda Paramahansa</p>
       </section>
     </nav>
 
     <main class="pratica">
-      <h1>Come utilizzare questo sito web.</h1>
       <p>Qui puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel <a href="https://amzn.to/3nmT7JA">suo libro</a> (pagina 62).</p>
       <h2>Conosci ➡️ Pratica.</h2>
       <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/spiegazione-tecnica-parole-evocatrici">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
