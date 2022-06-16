@@ -30,16 +30,18 @@
           </div>
         </div>
 
-      <p class="summary t-center">Breve introduzione alla tecnica della parole evocatrici di <b>Roberto Assagioli</b>.</p>
+      <h1>Introduzione alla tecnica delle parole evocatrici</h1>
+      <p class="summary">Una tecnica semplice ed efficace per migliorare le tue qualità interiori.</p>
       </section>
     </nav>
 
     <main class="pratica">
-      <h1>La tecnica delle parole evocatrici</h1>
 
-      <p><small>La tecnica qui descritta è pubblicata originariamente nel libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a> di Roberto Assagioli. <br>
+      <!-- 
+        @todo: VALUTARE SE INSERIRE QUESTA INTRODUZIONE
+        <p><small>La tecnica qui descritta è pubblicata originariamente nel libro <a href="https://amzn.to/3nmT7JA">L'Atto di volontà</a> di Roberto Assagioli. <br>
       Se ti piace la tecnica ti consiglio, oltre alla lettura di questo grande libro, di visitare il sito ufficiale della psicosintesi italiana, dove troverai risorse e percorsi 
-       per una <i>psicosintesi della tua vita</i> (psicosintesi = percorso di armonizzazione e organizzazione di tutti gli aspetti della personalità intorno all'io, centro di volontà e coscienza. )</small></p>
+       per una <i>psicosintesi della tua vita</i> (psicosintesi = percorso di armonizzazione e organizzazione di tutti gli aspetti della personalità intorno all'io, centro di volontà e coscienza. )</small></p> -->
       
       <h3>Introduzione</h3>
       <p>L'influenza di certe parole, come <i class="highlight">semplicità, intuizione, entusiasmo, creatività</i> sul nostro stato d'animo e le nostre idee è stato ampiamente 

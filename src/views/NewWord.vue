@@ -112,9 +112,9 @@ export default {
       let userWords = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : null;
 
       if(userWords)
-        this.basicWords.push(...userWords);
+        this.basicWords.push(...userWords); // la inserisco nelle parole predefinite
       
-      if(userWords && userWords.includes(this.newWord)) { // la parola esiste gia, mostro l'errore
+      if(userWords && this.basicWords.includes(this.newWord)) { // la parola esiste gia, mostro l'errore
         this.$swal('La parola esiste già.', 'La parola ' + this.newWord + ' esite già nel sito; prova con una parola differente', 'warning');
 
       } else { // aggiungo la parola
