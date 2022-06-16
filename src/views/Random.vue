@@ -59,7 +59,7 @@
       
       <h1>Scegli un metodo ed inizia a praticare</h1>
       
-      <p>Dopo avere letto <a href="/tecnica">come funziona la tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
+      <p>Dopo avere letto <a href="/spiegazione-tecnica-parole-evocatrici">come funziona la tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
 
 
       <div class="methods">
@@ -351,7 +351,7 @@ export default {
             html: ` <div style="text-align: left;">
               <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
               <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto e sentirai maggiori benefici.</p>
-              <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/tecnica">L'introduzione alla tecnica</a> 
+              <p>Per conoscere i meccanismi psicologici su cui si basa questa tecnica puoi leggere <a href="/spiegazione-tecnica-parole-evocatrici">L'introduzione alla tecnica</a> 
               oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
               </div>
             `,

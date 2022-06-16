@@ -20,7 +20,7 @@ const routes = [
   { path: '/', name: 'Home', component: Home },
 
   // docs
-  { path: '/tecnica', name: 'Tecnica', component: Tecnica },
+  { path: '/spiegazione-tecnica-parole-evocatrici', name: 'Tecnica', component: Tecnica },
   { path: '/metodi', name: 'Metodi', component: Metodi },
   { path: '/leggi-psicologiche', name: 'Leggi', component: Leggi },
   { path: '/help', name: 'Help', component: Help },

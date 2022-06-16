@@ -38,7 +38,7 @@
       <h1>Come utilizzare questo sito web.</h1>
       <p>Qui puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel <a href="https://amzn.to/3nmT7JA">suo libro</a> (pagina 62).</p>
       <h2>Conosci ➡️ Pratica.</h2>
-      <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/tecnica">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
+      <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/spiegazione-tecnica-parole-evocatrici">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
       <p>Come avrai intuito la tecnica e i suoi metodi sono molto semplici e possono essere applicati con altrettanta semplicità. Il metodo più immediato è quello di scrivere su un cartoncino la qualità interiore 
           che vuoi evocare e poi posizionare il cartoncino in un luogo dove attiri la tua attenzione.</p>
       <p>Se vuoi praticare con l'aiuto di questo sito web devi recarti nella <a href="/">homepage</a>, scegliere una parola ed infine scegliere il metodo con cui praticare.</p>

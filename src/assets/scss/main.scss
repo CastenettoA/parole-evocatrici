@@ -255,6 +255,25 @@ main {
         padding: 2px 8px;
         border-radius: 6px;
     }
+
+    .info-section {
+        padding-top: 2em;
+        h3 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: .9em;
+            color: #555;
+            font-weight: 700;
+            background-color: #eee;
+            display: inline-block;
+            padding: .2em .6em;
+            border-radius: .36em;
+        }
+
+        p:first-of-type {
+            margin-top: .5em;
+        }
+    }
 }
 
 button.danger {
