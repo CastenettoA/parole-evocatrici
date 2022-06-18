@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-Tavola_da_disegno_1">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="Tavola_da_disegno_1" data-name="Tavola da disegno – 1" clip-path="url(#clip-Tavola_da_disegno_1)">
+    <path id="Tracciato_184" data-name="Tracciato 184" d="M6360.2,7350.145l42.074-124.066h188.795l-36.679,124.066Z" transform="translate(-6070.021 -7067.111)" fill="#a2828e"/>
+    <path id="Tracciato_186" data-name="Tracciato 186" d="M6557.979,7226.079l30.937,110.64h-63.494C6522.965,7336.718,6557.979,7226.079,6557.979,7226.079Z" transform="translate(-6036.549 -7067.111)" fill="#7d616c"/>
+    <text id="FELICITÀ" transform="translate(340.76 234.005)" fill="#fdbb80" font-size="41" font-family="ARCENA, AR CENA"><tspan x="0" y="0">FELICITÀ</tspan></text>
+    <path id="Tracciato_185" data-name="Tracciato 185" d="M8594.767,10282.492l292.327,101.217,139.383,55.673s38.946,2.436,47.873-21.907,5.68-31.647,6.086-34.486,0-120.091,0-120.091l-253.93-103.491s-32.693,91.468-64.227,100.374S8594.767,10282.492,8594.767,10282.492Z" transform="translate(-8304.591 -9999.459)" fill="#66608d" opacity="0.12"/>
+  </g>
+</svg>

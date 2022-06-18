@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-Tavola_da_disegno_2">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="Tavola_da_disegno_2" data-name="Tavola da disegno – 2" clip-path="url(#clip-Tavola_da_disegno_2)">
+    <path id="Sottrazione_49" data-name="Sottrazione 49" d="M114.133,124.97H14a14,14,0,0,1-14-14V14A14,14,0,0,1,14,0H34.01a29.854,29.854,0,0,0,8.813,21.243,29.852,29.852,0,0,0,21.242,8.813A30.09,30.09,0,0,0,94.122,0h20.011a14,14,0,0,1,14,14V31.638a30.056,30.056,0,1,1,0,60.112v19.22a14,14,0,0,1-14,14Z" transform="translate(304.066 195.144) rotate(18)" fill="#343872" opacity="0.39"/>
+    <g id="Raggruppa_87" data-name="Raggruppa 87" transform="matrix(0.951, 0.309, -0.309, 0.951, 481.854, 221.307)" opacity="0.39">
+      <path id="Sottrazione_50" data-name="Sottrazione 50" d="M114.133,128.134H14a14,14,0,0,1-14-14V94.287a30.017,30.017,0,0,0,21.359-8.861A30.015,30.015,0,0,0,30.22,64.066,30.254,30.254,0,0,0,0,33.846V14A14,14,0,0,1,14,0H114.133a14,14,0,0,1,14,14V114.133a14,14,0,0,1-14,14Z" transform="translate(0 26.892)" fill="#343872"/>
+      <ellipse id="Ellisse_109" data-name="Ellisse 109" cx="30.056" cy="30.056" rx="30.056" ry="30.056" transform="translate(34.802 0)" fill="#343872"/>
+    </g>
+    <g id="Raggruppa_88" data-name="Raggruppa 88" transform="matrix(0.309, -0.951, 0.951, 0.309, 460.19, 200.962)" opacity="0.39">
+      <path id="Sottrazione_51" data-name="Sottrazione 51" d="M114.133,128.133H14a14,14,0,0,1-14-14V94.287a30.017,30.017,0,0,0,21.359-8.861A30.015,30.015,0,0,0,30.22,64.066,30.254,30.254,0,0,0,0,33.846V14A14,14,0,0,1,14,0H114.133a14,14,0,0,1,14,14V114.133a14,14,0,0,1-14,14Z" transform="translate(0 26.891)" fill="#343872"/>
+      <ellipse id="Ellisse_111" data-name="Ellisse 111" cx="30.056" cy="30.056" rx="30.056" ry="30.056" transform="translate(33.22 0)" fill="#343872"/>
+    </g>
+    <g id="Raggruppa_89" data-name="Raggruppa 89" transform="matrix(-0.951, -0.309, 0.309, -0.951, 430.817, 219.694)" opacity="0.39">
+      <path id="Sottrazione_52" data-name="Sottrazione 52" d="M114.133,128.134H14a14,14,0,0,1-14-14V94.287a30.017,30.017,0,0,0,21.359-8.861A30.015,30.015,0,0,0,30.22,64.066,30.254,30.254,0,0,0,0,33.846V14A14,14,0,0,1,14,0H114.133a14,14,0,0,1,14,14V114.133a14,14,0,0,1-14,14Z" transform="translate(0 26.891)" fill="#343872"/>
+      <ellipse id="Ellisse_113" data-name="Ellisse 113" cx="30.056" cy="30.056" rx="30.056" ry="30.056" transform="translate(33.22 0)" fill="#343872"/>
+    </g>
+  </g>
+</svg>

@@ -2,35 +2,16 @@
   <div class="home-view">
     <nav>
       <section>
-        <div class="logo">
-          <div class="logo-wrapper" @click="goToHome()">
-          <div class="img">
-              <svg xmlns="http://www.w3.org/2000/svg"  fill="#fdd835" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-              </svg>
-            </div>
-            <div class="title">Parole Evocatrici</div>
-          </div>
+        <HeaderLogo></HeaderLogo>
 
-          <div class="header-menu">
-
-                <div class="donation" v-on:click="openDonationInfoBox()">
-                  <svg xmlns="http://www.w3.org/2000/svg"  fill="#fff" class="bi bi-gift-fill" viewBox="0 0 16 16">
-                    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
-                  </svg>
-                </div>
-
-
-
-                <div class="donation question" v-on:click="goToinfoPage()">
-                  <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-question" viewBox="0 0 16 16">
-                    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                  </svg>
-                </div>
-          </div>
-        </div>
-
-      <p class="summary">Hai scelto di praticare con la parola {{currentWord}}. Ora segui le istruzioni che trovi sotto e inizia la tua pratica.</p>
+        <h1>Hai scelto di praticare con la parola
+          <span class="currentWord">
+            <span class="word">{{ currentWord }}</span>
+            <span class="bottom-line" :style="{ 'border-bottom': '6px solid ' + currentColor }"></span>
+          </span>
+        </h1>
+        <p class="summary">Dopo avere letto <a href="/spiegazione-tecnica-parole-evocatrici">come funziona la
+            tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
       </section>
     </nav>
 
@@ -55,14 +36,38 @@
 
     <div class="pratica">
       <button class="danger" v-if="userAddedWord" v-on:click="deleteWord()">Elimina questa parola.</button>
-      <hr>
-      
-      <h1>Scegli un metodo ed inizia a praticare</h1>
-      
-      <p>Dopo avere letto <a href="/spiegazione-tecnica-parole-evocatrici">come funziona la tecnica</a> non ti resta che <b>praticare</b> utilizzando uno dei metodi che trovi sotto.</p>
 
+      <h2 class="pratica-title">Pratica</h2>
 
-      <div class="methods">
+      <div class="info-section tecnica-cartoncino" v-on:click="open_m1_dialog">
+
+        <div class="content">
+          <h3 class="sub">Tecnica 1</h3>
+          <h3 class="title">La Tecnica del Cartoncino</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-cartoncino-1.svg">
+        </div>
+
+      </div>
+
+      <div class="info-section tecnica-composta" v-on:click="open_m2_dialog">
+
+        <div class="content">
+          <h3 class="sub">Tecnica 2</h3>
+          <h3 class="title">La Tecnica Composta</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-composta-2.svg">
+        </div>
+
+      </div>
+
+      <!-- <div class="methods">
         <div class="method">
           <div class="icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
@@ -94,152 +99,151 @@
           </svg></button>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <details> 
-        <summary>Sul condividere la pratica 🥳🎉🎉</summary>       
-        <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
-          dedicandoli una parola in particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e noto con piacere che le parole sono sempre ben accette!</p>
-          <h4>Come condividere?</h4>
-          <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in particolare da dedicare e condividerla.</p>
-        </details>
+      <details>
+        <summary>Condividi la pratica 🥳🎉🎉</summary>
+        <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi
+          conoscenti, amici e familiari. Magari
+          dedicandoli una parola in particolare; io stesso lo sto facendo, qui a casa e con i miei amici, e noto con
+          piacere che le parole sono sempre ben accette!</p>
+        <h4>Come condividere?</h4>
+        <p>Puoi farlo semplicemente condividendo il link di questa parola evocatrice, oppure puoi sceglierne una in
+          particolare da dedicare e condividerla.</p>
+      </details>
 
-      <details> 
-        <summary>Ogni quanto devo praticare? 🕒</summary>    
-        <p>Non c'è una risposta univoca uguale per tutti. Il tempo dedicato alla pratica varia a seconda dello scopo che ti sei prefissato 
+      <details>
+        <summary>Ogni quanto devo praticare? 🕒</summary>
+        <p>Non c'è una risposta univoca uguale per tutti. Il tempo dedicato alla pratica varia a seconda dello scopo che
+          ti sei prefissato
           e vari altri fattori.</p>
 
-          <p>Puo essere utile, all'inizio, definire un orario preciso ed un numero di volte definito in cui praticare (bastano pochi minuti al giorno), così inizierai 
-            ad entrare nella pratica <i>velocemente</i>.
-          </p>
+        <p>Puo essere utile, all'inizio, definire un orario preciso ed un numero di volte definito in cui praticare
+          (bastano pochi minuti al giorno), così inizierai
+          ad entrare nella pratica <i>velocemente</i>.
+        </p>
 
-         <p>Come <b>ritmo</b> puoi adottare quello di utilizzare una parola per un intervallo di tempo più o meno lungo (ad es. 1 giorno, settimana mese, o più) 
-        seguito da una ripetizione dopo una pausa, oppure puoi utilizzare una parola al giorno a rotazione.</p>
-        <p><b>La pratica ci farà capire qual'è il ritmo e la modalità più efficiente</b> che certamente variano anche a seconda del nostro tipo psicologico 
-        (per un approfondimento dei tipi psicologici vedi a pagina p.183, capitolo "Psicologia Differenziale" del libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli).</p>
-   
-       
-        </details>
-             
+        <p>Come <b>ritmo</b> puoi adottare quello di utilizzare una parola per un intervallo di tempo più o meno lungo
+          (ad es. 1 giorno, settimana mese, o più)
+          seguito da una ripetizione dopo una pausa, oppure puoi utilizzare una parola al giorno a rotazione.</p>
+        <p><b>La pratica ci farà capire qual'è il ritmo e la modalità più efficiente</b> che certamente variano anche a
+          seconda del nostro tipo psicologico
+          (per un approfondimento dei tipi psicologici vedi a pagina p.183, capitolo "Psicologia Differenziale" del
+          libro <a href="https://amzn.to/3nmT7JA">L'atto di Volontà</a> di Roberto Assagioli).</p>
+
+
+      </details>
+
     </div>
 
-        
-<FooterMain></FooterMain>
+
+    <FooterMain></FooterMain>
   </div>
 </template>
 
 <script>
+import HeaderLogo from '@/components/HeaderLogo.vue';
 // 'Ammirazione Apprezzamento Attenzione Bellezza Beatitudine Calma Compassione Comprensione Collaborazione Coraggio Creatività Audacia Decisione Distacco Determinazione Discernimento Disciplina Energia Decisione Distacco Determinazione Discernimento Disciplina Energia Entusiasmo Eternità Fede Libertà Amicizia Generosità Bontà Volontà buona Gratitudine Armonia Umorismo Inclusività Infinito Iniziativa Integrazione Gioia Liberazione Luce Amore Ordine Pazienza Pace Costanza Positività Forza Prontezza Quiete Realtà Rinnovamento Risolutezza Serenità Servizio Silenzio Semplicità Sintesi Tenacia Verità Comprensione Universalità Vitalità Interezza Volontà Saggezza Stupore'
 
 export default {
-  name: 'Word',
-  data: function() {
+  name: "Word",
+  data: function () {
     return {
-      RAquotes: [ // citazioni libere di roberto assagioli da mostrare affianco alla parola
-          'Ogni giorno, si potrebbe dire ogni ora, la vita ci offre delle opportunità, ci pone davanti a scelte, sta a noi riconoscerle e utilizzarle.',
-          'Quello che più conta è l’atteggiamento interno. In un certo senso le vacanze sono “uno stato d’animo”.',
-          'L’uomo umile è eroico perché malgrado la sua fragilità, procede nel cammino e tenta la scalata.',
-          'Con la virtuosa energia dell’umiltà (l\'uomo) realizza se stesso: non bada al giudizio altrui e alla sua reputazione, non ha bisogno di compiere sforzi per difenderle e può così liberare energie psichiche per i suoi progetti.',
-          'La crisi è l’inizio del cambiamento, è la prima attivazione di una nuova aspirazione, la prova tangibile della possibilità di spostarsi da un punto stabile',
-          'Siamo dominati da tutto ciò con cui ci identifichiamo, possiamo dominare tutto ciò da cui ci siamo disidentificati.',
-          'Tre cose soprattutto l\'uomo moderno deve apprendere per divenire sano e completo: l\'arte del riposo, l\'arte della contemplazione, l\'arte del riso e del sorriso.',
-          'La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.',
-          'Di ogni nostro pensiero, sforzo, atto buono viene tenuto conto dalla Grande Legge che regge gli atomi, gli uomini ed i mondi.',
-          'Liberarsi per liberare',
-          'Il grande mezzo per progredire spiritualmente è lo sforzo attivo e continuo di bene, voluto, amato ed offerto.',
-
-     ].sort( () => .5 - Math.random() ),
+      RAquotes: [
+        "Ogni giorno, si potrebbe dire ogni ora, la vita ci offre delle opportunità, ci pone davanti a scelte, sta a noi riconoscerle e utilizzarle.",
+        "Quello che più conta è l’atteggiamento interno. In un certo senso le vacanze sono “uno stato d’animo”.",
+        "L’uomo umile è eroico perché malgrado la sua fragilità, procede nel cammino e tenta la scalata.",
+        "Con la virtuosa energia dell’umiltà (l'uomo) realizza se stesso: non bada al giudizio altrui e alla sua reputazione, non ha bisogno di compiere sforzi per difenderle e può così liberare energie psichiche per i suoi progetti.",
+        "La crisi è l’inizio del cambiamento, è la prima attivazione di una nuova aspirazione, la prova tangibile della possibilità di spostarsi da un punto stabile",
+        "Siamo dominati da tutto ciò con cui ci identifichiamo, possiamo dominare tutto ciò da cui ci siamo disidentificati.",
+        "Tre cose soprattutto l'uomo moderno deve apprendere per divenire sano e completo: l'arte del riposo, l'arte della contemplazione, l'arte del riso e del sorriso.",
+        "La meditazione è un uso positivo e creativo della mente che collega attivamente il mondo interno e il mondo esterno.",
+        "Di ogni nostro pensiero, sforzo, atto buono viene tenuto conto dalla Grande Legge che regge gli atomi, gli uomini ed i mondi.",
+        "Liberarsi per liberare",
+        "Il grande mezzo per progredire spiritualmente è lo sforzo attivo e continuo di bene, voluto, amato ed offerto.",
+      ].sort(() => 0.5 - Math.random()),
       visibleMethod: null,
-
-
-      currentWord: this.$route.params.word, // todo: check for vulnerability
-      currentColor: '#71f285', 
+      currentWord: this.$route.params.word,
+      currentColor: "#71f285",
       isStarred: this.$route.params.starred,
       userAddedWord: false
-    }
+    };
   },
-  created: function() {
-    document.title = 'Parole Evocatrici - ' + this.currentWord;
-    document.getElementsByTagName('meta')["description"].content = 'Questa pagina è dedicata al ' + this.currentWord + ', segui le istruzioni che trovi sotto per iniziare a praticare.';
-
-    window.scrollTo(0,0); // needed because the windwos was not to top... try to belive it
-
-    if(this.$route.params.color)
+  created: function () {
+    document.title = "Parole Evocatrici - " + this.currentWord;
+    document.getElementsByTagName("meta")["description"].content = "Questa pagina è dedicata al " + this.currentWord + ", segui le istruzioni che trovi sotto per iniziare a praticare.";
+    window.scrollTo(0, 0); // needed because the windwos was not to top... try to belive it
+    if (this.$route.params.color)
       this.currentColor = this.$route.params.color;
-
     // check if the word is added by user
-    let userWords = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : null;
-    if(userWords && userWords.includes(this.currentWord)) {
+    let userWords = localStorage.getItem("userWords") ? localStorage.getItem("userWords").split(",") : null;
+    if (userWords && userWords.includes(this.currentWord)) {
       this.userAddedWord = true;
     }
-
     // check if the word is starred or not
-    let favoriteWords = localStorage.getItem('favoriteWords') ? localStorage.getItem('favoriteWords').split(',') : null;
-    if(favoriteWords && favoriteWords.includes(this.currentWord)) {
+    let favoriteWords = localStorage.getItem("favoriteWords") ? localStorage.getItem("favoriteWords").split(",") : null;
+    if (favoriteWords && favoriteWords.includes(this.currentWord)) {
       this.isStarred = true;
-    } else {
+    }
+    else {
       this.isStarred = false;
     }
   },
   methods: {
-    openDonationInfoBox: function() {
+    openDonationInfoBox: function () {
       this.$swal({
-        title: "🌟 Supporta questo progetto", 
-        html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
-         showCloseButton: true,
-          showCancelButton: true,
+        title: "🌟 Supporta questo progetto",
+        html: "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
+        showCloseButton: true,
+        showCancelButton: true,
         focusConfirm: true,
-        confirmButtonText:
-          'Si, effettuo una donazione 🚀',
-        cancelButtonText: 'No, grazie.'
-      }).then(function(r) {
-        if(r.isConfirmed)
-          location.href = 'https://paypal.me/pools/c/8bFReaiLUk';
+        confirmButtonText: "Si, effettuo una donazione 🚀",
+        cancelButtonText: "No, grazie."
+      }).then(function (r) {
+        if (r.isConfirmed)
+          location.href = "https://paypal.me/pools/c/8bFReaiLUk";
       });
     },
-
-    goToinfoPage: function(w) { 
-      if(this.$route.name != 'Help')
+    goToinfoPage: function (w) {
+      if (this.$route.name != "Help")
         this.$router.push({ name: "Help" });
     },
     deleteWord() {
       // rimuovo la parola dal localstorage (2) la rimuovo dai preferiti
-      let userWords = localStorage.getItem('userWords') ? localStorage.getItem('userWords').split(',') : null;
+      let userWords = localStorage.getItem("userWords") ? localStorage.getItem("userWords").split(",") : null;
       userWords.splice(userWords.indexOf(this.currentWord), 1);
-      localStorage.setItem('userWords', userWords);
-
-
+      localStorage.setItem("userWords", userWords);
       // rimuovo dai preferiti
-      let favWord = localStorage.getItem('favoriteWords') ? localStorage.getItem('favoriteWords').split(',') : null;
+      let favWord = localStorage.getItem("favoriteWords") ? localStorage.getItem("favoriteWords").split(",") : null;
       favWord.splice(favWord.indexOf(this.currentWord), 1);
-      localStorage.setItem('favoriteWords', favWord);
-
+      localStorage.setItem("favoriteWords", favWord);
       // mostro alert
-      this.$swal('Parola Eliminata.', 'La parola ' + this.currentWord + ' è stata eliminata correttamente', 'success').then(() => {
+      this.$swal("Parola Eliminata.", "La parola " + this.currentWord + " è stata eliminata correttamente", "success").then(() => {
         this.goToHome(); // reindirizzo l'utente alla home page dopo l'infobox
       });
     },
-    addToFavorites: function(word) { 
-      let favoriteWords = localStorage.getItem('favoriteWords');
-
+    addToFavorites: function (word) {
+      let favoriteWords = localStorage.getItem("favoriteWords");
       if (!favoriteWords) { // se non ci sono faviriti aggiungo la parola ai favoriti
-          localStorage.setItem('favoriteWords', word);
-      } else if (!favoriteWords.split(',').includes(word) ) { // se l'elemento non è già nei favoriti, lo aggiungo. Devo fare toString in quanto la local storage lavora in STRINGHE
-         localStorage.setItem('favoriteWords', favoriteWords + ',' + word);
-      } else if (favoriteWords.split(',').includes(word)) { // se la parola è presente, la rimuovo dai favoriti
-         let f = favoriteWords.split(',');
-         f.splice(f.indexOf(word), 1);
-         localStorage.setItem('favoriteWords', f);
+        localStorage.setItem("favoriteWords", word);
+      }
+      else if (!favoriteWords.split(",").includes(word)) { // se l'elemento non è già nei favoriti, lo aggiungo. Devo fare toString in quanto la local storage lavora in STRINGHE
+        localStorage.setItem("favoriteWords", favoriteWords + "," + word);
+      }
+      else if (favoriteWords.split(",").includes(word)) { // se la parola è presente, la rimuovo dai favoriti
+        let f = favoriteWords.split(",");
+        f.splice(f.indexOf(word), 1);
+        localStorage.setItem("favoriteWords", f);
       }
     },
-    open_m1_dialog: function() {
+    open_m1_dialog: function () {
       let w1 = this.$swal;
       this.$swal({
-        title: 'Il metodo del cartoncino',
-         html: `  
+        title: "Il metodo del cartoncino",
+        html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
           <br><br><small style="display: inline-block;">Questo metodo è molto semplice da applicare eppure molto efficace.</small> 
 
           <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
@@ -247,99 +251,106 @@ export default {
                   <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
                     frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
            </div>`,
-          confirmButtonText: 'Concludi l\'esercizio &rarr;', 
-          showCloseButton: true
-      }).then(function(r) {
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
         console.log(r);
-         w1.fire({
-             showCloseButton: true,
-            title: 'Congratulazioni! 🎊',
-            html: ` <div style="text-align: left;">
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
               <small>Ora che hai concluso la pratica puoi provare il <b>secondo metodo</b> oppure leggere più in basso dei consigli pratici 
               sul ritmo con cui eseguire questa pratica.</small>
               </div>
             `,
-            confirmButtonText: 'Torna al sito'
-          })
+          confirmButtonText: "Torna al sito"
+        });
       });
     },
     async open_m2_dialog() {
-      const steps = ['1', '2', '3']
+      const steps = ["1", "2", "3"];
       const Queue = this.$swal.mixin({
         progressSteps: steps,
-        confirmButtonText: 'Next >',
+        confirmButtonText: "Next >",
         // optional classes to avoid backdrop blinking between steps
-        showClass: { backdrop: 'swal2-noanimation' },
-        hideClass: { backdrop: 'swal2-noanimation' }
-      })
-
-      await Queue.fire({ // 5 times
-        title: 'Il metodo dell\'attenzione cosciente',
+        showClass: { backdrop: "swal2-noanimation" },
+        hideClass: { backdrop: "swal2-noanimation" }
+      });
+      await Queue.fire({
+        title: "Il metodo dell'attenzione cosciente",
         html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
            <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
            </div>`,
-                 confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
+        confirmButtonText: "Prossimo Step &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 0,
         // optional class to show fade-in backdrop animation which was disabled in Queue mixin
-        showClass: { backdrop: 'swal2-noanimation' },
-      })
+        showClass: { backdrop: "swal2-noanimation" },
+      });
       await Queue.fire({
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
         
           
           <p>Rifletti sul significato della parola e annota i risultati.</p>
           </div>`,
-        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
-          showClass: { backdrop: 'swal2-noanimation' },
-      })
+        confirmButtonText: "Prossimo Step &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 1,
+        showClass: { backdrop: "swal2-noanimation" },
+      });
       await Queue.fire({
-        title: 'Il metodo dell\'attenzione cosciente',
+        title: "Il metodo dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
           
           <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
           </div>`,
-        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
-        showClass: { backdrop: 'swal2-noanimation' },
-      })
+        confirmButtonText: "Prossimo Step &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 2,
+        showClass: { backdrop: "swal2-noanimation" },
+      });
       await Queue.fire({
-        title: 'Il metodo dell\'attenzione cosciente',
+        title: "Il metodo dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
           
           <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
           </div>`,
-        confirmButtonText: 'Prossimo Step &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
-        showClass: { backdrop: 'swal2-noanimation' },
-      })
-
+        confirmButtonText: "Prossimo Step &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 3,
+        showClass: { backdrop: "swal2-noanimation" },
+      });
       await Queue.fire({
-        title: 'Il metodo dell\'attenzione cosciente',
+        title: "Il metodo dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
-        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
+        <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
           
           <p>Scrivi la parola diverse volte.</p>
           </div>`,
-        confirmButtonText: 'Concludi Esercizio &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
-        showClass: { backdrop: 'swal2-noanimation' },
-      })
-
+        confirmButtonText: "Concludi Esercizio &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 4,
+        showClass: { backdrop: "swal2-noanimation" },
+      });
       await Queue.fire({
-        title: 'Congratulazioni! 🎊',
+        title: "Congratulazioni! 🎊",
         html: ` <div style="text-align: left;">
               <p>Ora che hai concluso l'esercizio ti consiglio vivamente di <b>organizzare una pratica giornaliera</b> (sono sufficenti anche 2 minuti al giorno) in un momento prestabilito della tua giornata.</p>
               <p>La pratica regolare ti consentirà di conoscere ed approfondire maggiormente questo medoto e sentirai maggiori benefici.</p>
@@ -347,81 +358,21 @@ export default {
               oppure puoi farlo direttamente leggendo il libro del suo ideatore <a href="https://amzn.to/3nmT7JA">Roberto Assagioli</a>.</p>
               </div>
             `,
-        confirmButtonText: 'Torna al sito &rarr;', progressSteps: ['1','2','3','4','5'], currentProgressStep: 4,
-        showClass: { backdrop: 'swal2-noanimation' },
-      })
+        confirmButtonText: "Torna al sito &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5"],
+        currentProgressStep: 4,
+        showClass: { backdrop: "swal2-noanimation" },
+      });
     },
-    goToHome: function(w) { 
-      if(this.$route.name != 'Home')
+    goToHome: function (w) {
+      if (this.$route.name != "Home")
         this.$router.push({ name: "Home" });
     },
-  }
+  },
+  components: { HeaderLogo }
 }
 </script>
 
-<style lang="scss">
-
-.fade-enter-active {
-  transition: opacity .3s;
-}
-
-.fade-leave-active {
-  transition: opacity 0s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-
-  .quotes {
-    width: 48%;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: monospace;
-  }
-
-  .methods {
-    .method {
-      display: flex;
-      margin-bottom: 1em;
-
-      background: #2196F3; color: #fff;
-      border-radius: 6px;
-      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-
-      .icon {
-        width: 110px;
-        display: flex; justify-content: center; align-items: center;
-        background: #1976D2;
-        border-radius: 6px 0 0 6px;
-      }
-
-      .content {
-        flex: 1;
-        padding: 1.2em;
-
-        h3 { color: #fff; margin: 0; }
-        p { margin: .4em 0; }
-        button {
-          padding: 6px 12px; margin-top: 1em;
-          display: flex; align-items: center;
-          font-family: Arial; font-size: 0.9em; letter-spacing: normal;
-          color: #fff; font-weight: bold; text-transform: uppercase;
-          background-color: #3F51B5;
-          border-radius: 6px;
-          transition: .3s all;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-
-  .open-method {
-    background-color: #eee; border: 1px solid #ddd;
-    padding: .5em 1em; margin-bottom: 1em;
-    border-radius: 6px;
-  }
-
-
+<style scoped lang="scss">
+@import '@/assets/scss/info-section.scss';
 </style>
