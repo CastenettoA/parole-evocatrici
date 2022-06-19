@@ -50,7 +50,7 @@
 
       <div class="info-section">
         <h3>Le sue origini</h3>
-        <p>scritta nel libro <i>L'Atto di Volontà</i> di Roberto Assagioli, psichiatra del 1900 fondatore della
+        <p>La tecnica è descritta nel libro <i>L'Atto di Volontà</i> di Roberto Assagioli, psichiatra del 1900 fondatore della
           Psicosintesi.</p>
         <p>Essa utilizza il potere delle parole per evocare o modificare uno stato d'animo interiore così che possiamo a
           seconda
@@ -69,11 +69,11 @@
           tendono a produrre le azioni e gli atti corrispondenti.</p>
       </div>
 
-      <div class="info-section">
+      <div class="info-section">              
         <h3>Come utilizzarla</h3>
-        <p>Ci sono vari modi per utlizarla. Su questa applicazione vedrai i metodi fondamentali.</p>
+        <p>Ci sono vari modi per utilizzare questa tecnica.. Su questa applicazione scoprirai e ti eserciterai nei metodi fondamentali.</p>
         <p>Dopo che avrai praticato per un po queste tecniche potrai iniziare a modificarle liberamente adattandole
-          alle tue preferenze ed alla tua giornata.
+          alle tue preferenze ed alla tua giornata. Buon divertimento.
         </p>
       </div>
 
