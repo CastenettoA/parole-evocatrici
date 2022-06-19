@@ -35,9 +35,8 @@
         
 
     <div class="pratica">
-      <h2>Pratica</h2>
+      <h2 class="pratica-title">Pratica</h2>
       
-      <!-- <@todo: check if delete button is in all pages -->
       <button class="danger" v-if="userAddedWord" v-on:click="deleteWord()">Elimina questa parola.</button>
 
       <div class="info-section tecnica-cartoncino" v-on:click="open_m1_dialog">

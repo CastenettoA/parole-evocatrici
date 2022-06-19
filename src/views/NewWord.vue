@@ -4,7 +4,7 @@
       <section>
         <HeaderLogo></HeaderLogo>
 
-  
+      <h1>Aggiungi una nuova parola.</h1>
       <p class="summary">Modifica il testo della card sottostante e poi clicca su <b>Aggiungi Parola</b> per inserire una nuova parola nel tuo spazio personale.</p>
       </section>
     </nav>
@@ -23,8 +23,7 @@
     <div class="pratica">
       <p>Nota: non essendoci un sistema di registrazione in questa applicazione, 
         le parole che aggiungi vengono salvate nel tuo Browser Web. Se accedi all'applicazione con un altro browser non troverai 
-        la parola che hai aggiunto adesso. <br><br>Inoltre, sebbene le parole che hai aggiunto dovrebbero persistere 'per sempre', non posso
-         garantirti la durata effettiva nel tuo browser web.<br> <br> Detto questo, buona pratica :)</p>
+        la parola che hai aggiunto adesso.</p>
     </div>  
         
 <FooterMain></FooterMain>
