@@ -16,20 +16,33 @@
     </nav>
 
     <main class="words single">
-       <div class="word" :style="{backgroundColor: currentColor}">
-       <div class="star" v-on:click="addToFavorites(currentWord); isStarred = !isStarred" title="Aggiungi-Rimuovi dai preferiti">
-         <svg v-if="!isStarred" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-star" viewBox="0 0 18 18">
-            <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      <div :style="{ backgroundColor: currentColor }" :class="{goFullScreen:goFullScreen, word:true}">
+        <div class="fullscreen" v-on:click="fullScreenCard()" title="Apri parola a schermo intero">
+          <svg height="14px" version="1.1" viewBox="0 0 14 14" width="14px">
+            <path
+              d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z"
+              id="Shape" />
+
           </svg>
-         <svg v-else xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffeb3b" class="bi bi-star-fill" viewBox="0 0 18 18">
-           <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-         </svg>
-       </div>
-        <p class="main-word">{{currentWord}}</p>
+        </div>
+        <div class="star" v-on:click="addToFavorites(currentWord); isStarred = !isStarred"
+          title="Aggiungi-Rimuovi dai preferiti">
+          <svg v-if="!isStarred" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+            class="bi bi-star" viewBox="0 0 18 18">
+            <path
+              d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+          </svg>
+          <svg v-else xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#ffeb3b" class="bi bi-star-fill"
+            viewBox="0 0 18 18">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <p class="main-word">{{ currentWord }}</p>
       </div>
 
       <div class="quotes">
-        <p>&ldquo;{{RAquotes[0]}}&rdquo; &mdash; <small>Roberto Assagioli</small></p>
+        <p>&ldquo;{{ RAquotes[0] }}&rdquo; &mdash; <small>Roberto Assagioli</small></p>
       </div>
     </main>
 
@@ -149,6 +162,7 @@ export default {
   name: "Word",
   data: function () {
     return {
+      goFullScreen: false, // class bind for fullscreen word
       RAquotes: [
         "Ogni giorno, si potrebbe dire ogni ora, la vita ci offre delle opportunità, ci pone davanti a scelte, sta a noi riconoscerle e utilizzarle.",
         "Quello che più conta è l’atteggiamento interno. In un certo senso le vacanze sono “uno stato d’animo”.",
@@ -221,6 +235,10 @@ export default {
       this.$swal("Parola Eliminata.", "La parola " + this.currentWord + " è stata eliminata correttamente", "success").then(() => {
         this.goToHome(); // reindirizzo l'utente alla home page dopo l'infobox
       });
+    },
+    fullScreenCard: function() {
+      // open the current word in full screen mode
+      this.goFullScreen = !this.goFullScreen;
     },
     addToFavorites: function (word) {
       let favoriteWords = localStorage.getItem("favoriteWords");

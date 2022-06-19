@@ -301,6 +301,19 @@ main.words {
 
         order: 0; // needed for order "starred" flex items
 
+        &.goFullScreen {
+            position: fixed;
+            top: 2vh;
+            left: 2vw;
+            height: 96vh;
+            width: 95vw;
+            z-index: 100;
+
+            .main-word {
+                font-size: 8vw; // make font size dynamic
+            }
+        }
+
         .main-word {
             // avoid anoing selection on mobile device
             -webkit-user-select: none;
@@ -311,6 +324,29 @@ main.words {
             /* IE 10+ */
             user-select: none;
             /* Likely future */
+        }
+
+        .fullscreen {
+            position: absolute;
+            top: 6px;
+            right: 40px;
+            width: 30px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s all;
+            cursor: pointer;
+
+            svg {
+                opacity: .8;
+            }
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .4);
+            }
         }
 
         .star {
