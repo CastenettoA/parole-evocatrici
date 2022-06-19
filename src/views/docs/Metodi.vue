@@ -25,7 +25,7 @@
       dalle iscrizioni sugli stemmi di varie famiglie nobili: Ad sidera vultus (Rivolto alle stelle), Pensa al fine, Bien faire et laisser dire (Agire bene e lasciar dire), Semprer vigilans (Sempre vigile), In tutto armonia.</p>
 
       <h2>L'attenzione cosciente</h2>
-      <p>E' il metodo più efficace consiste nel prestare coscientemente attenzione alla parola scelta, convogliando quindi le proprie energie psicologiche sulla qualità da sviluppare.</p>
+      <p>E' la tecnica più efficace, consiste nel prestare coscientemente attenzione alla parola scelta, convogliando quindi le proprie energie psicologiche sulla qualità da sviluppare.</p>
       <p>Ciò può essere fatto in vari modi (segliendone uno o più di uno), dopo esserti messo in uno stato di rilassamento mentale e muscolare:</p>
       <ol>
         <li><i>Osservare</i> per qualche minuto la parola (se affiorano dall'inconsio idee o immagini collegate con la parola, lasciarle emergere e poi segnarle).</li>

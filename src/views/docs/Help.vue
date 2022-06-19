@@ -12,10 +12,10 @@
     <main class="pratica">
       <p>Qui puoi imparare e praticare la <b>tecnica delle parole evocatrici</b> presentata da Roberto Assagioli nel <a href="https://amzn.to/3nmT7JA">suo libro</a> (pagina 62).</p>
       <h2>Conosci ➡️ Pratica.</h2>
-      <p>Per prima cosa, se sei nuovo alla tecnica, ti consiglio di leggere una <a href="/spiegazione-tecnica-parole-evocatrici">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
-      <p>Come avrai intuito la tecnica e i suoi metodi sono molto semplici e possono essere applicati con altrettanta semplicità. Il metodo più immediato è quello di scrivere su un cartoncino la qualità interiore 
+      <p>Per prima cosa, se non conosci questo metodo, ti consiglio di leggere una <a href="/spiegazione-tecnica-parole-evocatrici">breve introduzione alla tecnica</a>; dopo aver digerito la lettura puoi passare alla pratica.</p>
+      <p>Come avrai intuito la tecnica e i suoi metodi sono molto semplici e possono essere applicati con altrettanta semplicità. La tecnica più immediata è quella di scrivere su un cartoncino la qualità interiore 
           che vuoi evocare e poi posizionare il cartoncino in un luogo dove attiri la tua attenzione.</p>
-      <p>Se vuoi praticare con l'aiuto di questo sito web devi recarti nella <a href="/">homepage</a>, scegliere una parola ed infine scegliere il metodo con cui praticare.</p>
+      <p>Se vuoi praticare con l'aiuto di questo sito web devi recarti nella <a href="/">homepage</a>, scegliere una parola ed infine scegliere la tecnica con cui praticare.</p>
       <p>Se ti "senti fortunato" puoi <a href="/random">scegliere una parola evocatrice casualmente</a> 😁 o anche aggiungere una <a href="/newWord">nuova parola</a>.</p>
 
       <h4>Perchè ho creato questo sito web?</h4>
@@ -27,7 +27,7 @@
          intensificarla o condividere la tecnica in una maniera più visuale.
       </p>
 
-      <h2>Condividere la pratica</h2>
+      <h2>Condividere la pratica</h2> 
       <p>Se anche tu pensi che questa tecnica sia utile e che porti benefici concreti potresti condividerla con i tuoi conoscenti, amici e familiari. Magari 
           dedicandoli una parola in particolare; io lo sto facendo, qui a casa e con i miei amici,
            e noto con piacere che le parole sono sempre ben accette!</p>

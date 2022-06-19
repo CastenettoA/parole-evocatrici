@@ -76,9 +76,9 @@
           </div>
 
           <div class="content">
-            <h3>#1 Metodo del cartoncino</h3>
-            <p>E' il metodo più semplice per iniziare a praticare la tecnica delle parole evocatrici.</p>
-            <button v-on:click="open_m1_dialog()">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+            <h3>#1 la tecnica del cartoncino</h3>
+            <p>E' La tecnica più semplice per iniziare a praticare la tecnica delle parole evocatrici.</p>
+            <button v-on:click="open_m1_dialog()">pratica con questo la tecnica <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
           </svg></button>
           </div>
@@ -92,8 +92,8 @@
           </div>
 
           <div class="content">
-            <h3>#2 Metodo dell'attenzione cosciente</h3>
-            <p>Questo metodo, dove prestiamo coscientemente attenzione alla parola, reppresenta un metodo ancora più efficace.</p>
+            <h3>#2 la tecnica dell'attenzione cosciente</h3>
+            <p>Questa tecnica, dove prestiamo coscientemente attenzione alla parola, reppresenta un metodo ancora più efficace.</p>
             <button v-on:click="open_m2_dialog()">pratica con questo metodo <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
           </svg></button>
@@ -239,12 +239,12 @@ export default {
     open_m1_dialog: function () {
       let w1 = this.$swal;
       this.$swal({
-        title: "Il metodo del cartoncino",
+        title: "La tecnica del cartoncino",
         html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
-          <br><br><small style="display: inline-block;">Questo metodo è molto semplice da applicare eppure molto efficace.</small> 
+          <br><br><small style="display: inline-block;">Questa tecnica è molto semplice da applicare eppure molto efficace.</small> 
 
           <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
                   Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
@@ -259,7 +259,7 @@ export default {
           showCloseButton: true,
           title: "Congratulazioni! 🎊",
           html: ` <div style="text-align: left;">
-              <small>Ora che hai concluso la pratica puoi provare il <b>secondo metodo</b> oppure leggere più in basso dei consigli pratici 
+              <small>Ora che hai concluso la pratica puoi provare la seconda <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
               sul ritmo con cui eseguire questa pratica.</small>
               </div>
             `,
@@ -277,12 +277,12 @@ export default {
         hideClass: { backdrop: "swal2-noanimation" }
       });
       await Queue.fire({
-        title: "Il metodo dell'attenzione cosciente",
+        title: "La tecnica dell'attenzione cosciente",
         html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
-           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
+           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta una tecnica ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
@@ -308,7 +308,7 @@ export default {
         showClass: { backdrop: "swal2-noanimation" },
       });
       await Queue.fire({
-        title: "Il metodo dell'attenzione cosciente",
+        title: "La tecnica dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
@@ -322,7 +322,7 @@ export default {
         showClass: { backdrop: "swal2-noanimation" },
       });
       await Queue.fire({
-        title: "Il metodo dell'attenzione cosciente",
+        title: "La tecnica dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
@@ -336,7 +336,7 @@ export default {
         showClass: { backdrop: "swal2-noanimation" },
       });
       await Queue.fire({
-        title: "Il metodo dell'attenzione cosciente",
+        title: "La tecnica dell'attenzione cosciente",
         html: `  
         <div style="text-align: left;">
           <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>

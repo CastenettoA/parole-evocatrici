@@ -213,12 +213,12 @@ export default {
         
       }).queue([
         {
-          title: 'Il metodo del cartoncino',
+          title: 'La tecnica del cartoncino',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-          <br><br><small style="display: inline-block;">Questo metodo è molto semplice da applicare eppure molto efficace.</small> 
+          <br><br><small style="display: inline-block;">Questa tecnica è molto semplice da applicare eppure molto efficace.</small> 
 
           <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
                   Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
@@ -250,7 +250,7 @@ export default {
              showCloseButton: true,
             title: 'Congratulazioni! 🎊',
             html: ` <div style="text-align: left;">
-              <small>Ora che hai concluso la pratica puoi provare il <b>secondo metodo</b> oppure leggere più in basso dei consigli pratici 
+              <small>Ora che hai concluso la pratica puoi provare la <b>seconda tecnica</b> oppure leggere più in basso dei consigli pratici 
               sul ritmo con cui eseguire questa pratica.</small>
               </div>
             `,
@@ -263,12 +263,12 @@ export default {
     open_m2_dialog: function() {
       this.$swal.mixin().queue([
         {
-          title: 'Il metodo dell\'attenzione cosciente',
+          title: 'La tecnica dell\'attenzione cosciente',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord +  `</p>
-           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta un metodo ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
+           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta una tecnica ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
@@ -276,7 +276,7 @@ export default {
           confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 0,
         },
         {
-          title: 'Il metodo dell\'attenzione cosciente',
+          title: 'La tecnica dell\'attenzione cosciente',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
@@ -288,7 +288,7 @@ export default {
           confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 1,
         },
         {
-          title: 'Il metodo dell\'attenzione cosciente',
+          title: 'La tecnica dell\'attenzione cosciente',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
@@ -299,7 +299,7 @@ export default {
           confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 2,
         },
         {
-          title: 'Il metodo dell\'attenzione cosciente',
+          title: 'La tecnica dell\'attenzione cosciente',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
@@ -310,7 +310,7 @@ export default {
           confirmButtonText: 'Prossimo Step &rarr;', showCloseButton: true, progressSteps: ['1','2','3','4','5'], currentProgressStep: 3,
         },
         {
-          title: 'Il metodo dell\'attenzione cosciente',
+          title: 'La tecnica dell\'attenzione cosciente',
           html: `  
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
