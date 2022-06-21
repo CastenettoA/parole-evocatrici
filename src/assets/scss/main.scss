@@ -30,7 +30,12 @@ footer {
 }
 
 .docs nav {
-    padding: 30px 0 1em 0; // reduced paddign for only testual page.
+    padding: 15px 0 1em 0; // reduced paddign for only testual page.
+
+    @media screen and (min-width: 640px) {
+        padding: 30px 0 1em 0; // reduced paddign for only testual page.
+    }
+    
 
     section .logo {
         margin-bottom: 1em;
@@ -45,7 +50,11 @@ nav {
     background-image: linear-gradient(to right top, #0b36d3 45%, #65FBD2);
     color: #fff;
     width: 100%;
-    padding: 30px 0 56px 0;
+    padding: 15px 0 56px 0;
+
+    @media screen and (min-width: 640px) {
+        padding: 30px 0 56px 0;
+    }
 
     section {
 
@@ -239,8 +248,8 @@ nav {
         background-color: rgba(0, 0, 0, .45);
     }
 
-    .title {
-        margin-left: 1em;
+    .title { 
+        margin-left: .5em;
         text-transform: uppercase;
     }
 }
