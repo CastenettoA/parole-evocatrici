@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-tecnica-leggere">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="tecnica-leggere" clip-path="url(#clip-tecnica-leggere)">
+    <path id="Tracciato_184" data-name="Tracciato 184" d="M6360.2,7350.145l42.074-124.066h188.795l-36.679,124.066Z" transform="translate(-6070.197 -7067.078)" fill="#a2828e"/>
+    <path id="Tracciato_186" data-name="Tracciato 186" d="M6557.979,7226.079l30.937,110.64h-63.494C6522.965,7336.718,6557.979,7226.079,6557.979,7226.079Z" transform="translate(-6036.549 -7067.111)" fill="#7d616c"/>
+    <path id="Tracciato_185" data-name="Tracciato 185" d="M8594.767,10282.492l292.327,101.217,139.383,55.673s38.946,2.436,47.873-21.907,5.68-31.647,6.086-34.486,0-120.091,0-120.091l-253.93-103.491s-32.693,91.468-64.227,100.374S8594.767,10282.492,8594.767,10282.492Z" transform="translate(-8304.591 -9999.459)" fill="#66608d" opacity="0.12"/>
+    <path id="_8541567_book_open_reading_icon" data-name="8541567_book_open_reading_icon" d="M64.294,32c-6.5.369-19.413,1.711-27.386,6.592a1.823,1.823,0,0,0-.862,1.562V83.3a1.876,1.876,0,0,0,2.76,1.6c8.2-4.129,20.067-5.255,25.933-5.564A3.7,3.7,0,0,0,68.3,75.7V35.642A3.717,3.717,0,0,0,64.294,32Zm-32.9,6.592C23.419,33.713,10.5,32.372,4.005,32A3.719,3.719,0,0,0,0,35.642V75.7a3.7,3.7,0,0,0,3.56,3.636c5.868.308,17.738,1.436,25.941,5.567a1.871,1.871,0,0,0,2.752-1.6V40.134A1.785,1.785,0,0,0,31.391,38.594Z" transform="translate(370.786 162.948)" fill="#fdbb80"/>
+  </g>
+</svg>

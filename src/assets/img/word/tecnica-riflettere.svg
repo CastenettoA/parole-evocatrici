@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-tecnica-pensare">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="tecnica-pensare" clip-path="url(#clip-tecnica-pensare)">
+    <path id="Tracciato_184" data-name="Tracciato 184" d="M6360.2,7350.145l42.074-124.066h188.795l-36.679,124.066Z" transform="translate(-6070.197 -7067.078)" fill="#a2828e"/>
+    <path id="Tracciato_186" data-name="Tracciato 186" d="M6557.979,7226.079l30.937,110.64h-63.494C6522.965,7336.718,6557.979,7226.079,6557.979,7226.079Z" transform="translate(-6036.549 -7067.111)" fill="#7d616c"/>
+    <path id="Tracciato_185" data-name="Tracciato 185" d="M8594.767,10282.492l292.327,101.217,139.383,55.673s38.946,2.436,47.873-21.907,5.68-31.647,6.086-34.486,0-120.091,0-120.091l-253.93-103.491s-32.693,91.468-64.227,100.374S8594.767,10282.492,8594.767,10282.492Z" transform="translate(-8304.591 -9999.459)" fill="#66608d" opacity="0.12"/>
+    <path id="_8674201_ic_fluent_thinking_filled_icon" data-name="8674201_ic_fluent_thinking_filled_icon" d="M8.855,56.837A6.855,6.855,0,1,1,2,63.692,6.855,6.855,0,0,1,8.855,56.837ZM27.7,46.555a8.568,8.568,0,1,1-8.568,8.568A8.568,8.568,0,0,1,27.7,46.555ZM36.273,2A18.554,18.554,0,0,1,54.541,17.322h.28a12.9,12.9,0,0,1,0,25.806h-37.1a12.9,12.9,0,1,1,0-25.806H18A18.554,18.554,0,0,1,36.273,2Z" transform="translate(371 185)" fill="#fdbb80"/>
+  </g>
+</svg>

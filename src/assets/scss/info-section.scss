@@ -29,7 +29,7 @@
   }
 
   .image {
-    width: 50%;
+    width: 30%;
     display: flex;
     align-items: center;
     padding-right: 10%;
@@ -37,6 +37,7 @@
     transform: scale(1.5) skewX(-18deg);
 
     @media screen and (min-width: 560px){
+        width: 50%;
         transform: scale(1.3) skewX(-18deg);
     }
 
@@ -57,11 +58,34 @@
 
   &.tecnica-cartoncino {
     background-color: #DCE7F1;
+  }
 
+  &.tecnica-osservare {
+    background-color: #f0e2db;
+  }
+
+  &.tecnica-scrivere {
+    background-color: #e1e3c8;
+  }
+
+  &.tecnica-riflettere {
+    background-color: #fff3d0;
+  }
+
+  &.tecnica-sentire {
+    background-color: #f9dede;
+  }
+
+  &.tecnica-ripetizione {
+    background-color: #e4eedc;
+  }
+
+  &.tecnica-leggere {
+    background-color: #d5e0da;
   }
 
   &.tecnica-composta {
-    background-color: #f0e2db;
+    background-color: #eedbfb;
   }
 
   h3.sub {
@@ -76,12 +100,13 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 700;
+    font-size: 1.52em;
   }
 
   p {
     margin-top: 0;
     color: #555;
-    font-size: 1.1em;
+    font-size: .9em;
 
     display: inline-block;
     background-color: rgba(0, 0, 0, .1);

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-tecnica-sentire">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="tecnica-sentire" clip-path="url(#clip-tecnica-sentire)">
+    <path id="Tracciato_184" data-name="Tracciato 184" d="M6360.2,7350.145l42.074-124.066h188.795l-36.679,124.066Z" transform="translate(-6070.021 -7067.111)" fill="#a2828e"/>
+    <path id="Tracciato_186" data-name="Tracciato 186" d="M6557.979,7226.079l30.937,110.64h-63.494C6522.965,7336.718,6557.979,7226.079,6557.979,7226.079Z" transform="translate(-6036.549 -7067.111)" fill="#7d616c"/>
+    <path id="Tracciato_185" data-name="Tracciato 185" d="M8594.767,10282.492l292.327,101.217,139.383,55.673s38.946,2.436,47.873-21.907,5.68-31.647,6.086-34.486,0-120.091,0-120.091l-253.93-103.491s-32.693,91.468-64.227,100.374S8594.767,10282.492,8594.767,10282.492Z" transform="translate(-8304.591 -9999.459)" fill="#66608d" opacity="0.12"/>
+    <path id="_9004767_heart_love_like_romance_icon" data-name="9004767_heart_love_like_romance_icon" d="M27.783,50.693C47.261,40.954,54.566,28.78,54.566,16.606A14.609,14.609,0,0,0,27.783,8.537,14.609,14.609,0,0,0,1,16.606C1,28.78,8.3,40.954,27.783,50.693Z" transform="translate(376.371 194.151)" fill="#fdbb80"/>
+  </g>
+</svg>

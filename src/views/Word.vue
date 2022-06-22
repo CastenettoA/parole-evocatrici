@@ -51,12 +51,17 @@
       <button class="danger" v-if="userAddedWord" v-on:click="deleteWord()">Elimina questa parola.</button>
 
       <h2 class="pratica-title">Pratica</h2>
+      <p class="pratica-smalltext">Prima di ogni tecnica, dedica qualche istante al rilassamento del corpo e della mente. Permettiti di entrare nella 
+        nuova attività senza fretta. 
+        <!-- Inoltre mentre ti eserciti tieni a mente <a href="/blog/">i consigli pratici</a> sulle tecniche. -->
+      </p>
 
-      <div class="info-section tecnica-cartoncino" v-on:click="open_m1_dialog">
+      <!-- 1° tecnica, il cartoncino -->
+      <div class="info-section tecnica-cartoncino" v-on:click="open_cartoncino_dialog">
 
         <div class="content">
           <h3 class="sub">Tecnica 1</h3>
-          <h3 class="title">La Tecnica del Cartoncino</h3>
+          <h3 class="title">Il Cartoncino</h3>
           <p>Pratica Ora →</p>
         </div>
 
@@ -66,10 +71,94 @@
 
       </div>
 
-      <div class="info-section tecnica-composta" v-on:click="open_m2_dialog">
-
+      <!-- 2° tecnica, osservare la parola -->
+      <div class="info-section tecnica-osservare" v-on:click="open_osservare_dialog">
         <div class="content">
           <h3 class="sub">Tecnica 2</h3>
+          <h3 class="title">La Osservazione Diretta</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-osservare.svg">
+        </div>
+
+      </div>
+
+      <!-- 3° tecnica, scrivere la parola -->
+      <div class="info-section tecnica-scrivere" v-on:click="open_scrivere_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 3</h3>
+          <h3 class="title">Lo Scrivere</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-scrivere.svg">
+        </div>
+
+      </div>
+
+      <!-- 4° tecnica, riflettere sulla parola -->
+      <div class="info-section tecnica-riflettere" v-on:click="open_riflettere_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 4</h3>
+          <h3 class="title">La Riflessione Attiva</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-riflettere.svg">
+        </div>
+
+      </div>
+
+      <!-- 5° tecnica, sentire la parola -->
+      <div class="info-section tecnica-sentire" v-on:click="open_sentire_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 5</h3>
+          <h3 class="title">Il Sentire</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-sentire.svg">
+        </div>
+
+      </div>
+
+      <!-- 6° tecnica, ripetere mentalmente la parola -->
+      <div class="info-section tecnica-ripetizione" v-on:click="open_ripetizione_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 6</h3>
+          <h3 class="title">La Ripetizione Mentale</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-ripetizione.svg">
+        </div>
+
+      </div>
+
+      <!-- 7° tecnica, leggere un libro -->
+      <div class="info-section tecnica-leggere" v-on:click="open_leggere_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 7</h3>
+          <h3 class="title">La Lettura</h3>
+          <p>Pratica Ora →</p>
+        </div>
+
+        <div class="image">
+          <img src="@/assets/img/word/tecnica-leggere.svg">
+        </div>
+
+      </div>
+      
+      <!-- 8° tecnica, leggere un composta -->
+      <div class="info-section tecnica-composta" v-on:click="open_composta_dialog">
+        <div class="content">
+          <h3 class="sub">Tecnica 8</h3>
           <h3 class="title">La Tecnica Composta</h3>
           <p>Pratica Ora →</p>
         </div>
@@ -156,7 +245,6 @@
 
 <script>
 import HeaderLogo from '@/components/HeaderLogo.vue';
-// 'Ammirazione Apprezzamento Attenzione Bellezza Beatitudine Calma Compassione Comprensione Collaborazione Coraggio Creatività Audacia Decisione Distacco Determinazione Discernimento Disciplina Energia Decisione Distacco Determinazione Discernimento Disciplina Energia Entusiasmo Eternità Fede Libertà Amicizia Generosità Bontà Volontà buona Gratitudine Armonia Umorismo Inclusività Infinito Iniziativa Integrazione Gioia Liberazione Luce Amore Ordine Pazienza Pace Costanza Positività Forza Prontezza Quiete Realtà Rinnovamento Risolutezza Serenità Servizio Silenzio Semplicità Sintesi Tenacia Verità Comprensione Universalità Vitalità Interezza Volontà Saggezza Stupore'
 
 export default {
   name: "Word",
@@ -254,7 +342,7 @@ export default {
         localStorage.setItem("favoriteWords", f);
       }
     },
-    open_m1_dialog: function () {
+    open_cartoncino_dialog: function () {
       let w1 = this.$swal;
       this.$swal({
         title: "La tecnica del cartoncino",
@@ -262,12 +350,18 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
-          <br><br><small style="display: inline-block;">Questa tecnica è molto semplice da applicare eppure molto efficace.</small> 
 
-          <p><b>Istruzioni</b> &mdash; Ora ritaglia un foglietto di carta e scrivi sopra di esso la parola che hai scelto. 
+          <h3>Istruzioni</h3>
+          <p>Ritaglia un foglietto di carta e <b>scrivi sopra di esso la parola</b> che hai scelto. <br><br>
                   Successivamente posiziona il cartoncino in un luogo che frequenti spesso (come la scrivania, un tavolo, una parete, ecc).</p>
-                  <small>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
-                    frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</small>
+
+          <p>Il solo vedere quella parola una volta ogni tanto, anche inconsciamente, quindi senza la tua attenzione diretta 
+          favorirà l'emergere della parola che hai scelto nel tuo ambiente psicologico. <br>
+          Comincerai quindi a sentire la parola, o i suoi effetti, grazie al fatto che l'inconscio assorbe la parola. Per 
+          questa tecnica quasi non serve sforzarsi, eppure mantiene la sua efficacia.</p>
+
+                  <p>Per ottenere un effetto comulativo, puoi creare più foglietti e distribuirli in luoghi diversi. Niente ti vieta di scrivere su un cartoncino una 
+                    frase simbolo della qualità che vuoi evocare oppure scriverla su un cartoncino molto grande che attiri subito la tua attenzione.</p>
            </div>`,
         confirmButtonText: "Concludi l'esercizio &rarr;",
         showCloseButton: true
@@ -277,15 +371,203 @@ export default {
           showCloseButton: true,
           title: "Congratulazioni! 🎊",
           html: ` <div style="text-align: left;">
-              <small>Ora che hai concluso la pratica puoi provare la seconda <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
-              sul ritmo con cui eseguire questa pratica.</small>
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
               </div>
             `,
           confirmButtonText: "Torna al sito"
         });
       });
     },
-    async open_m2_dialog() {
+    open_osservare_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica dell'osservazione diretta",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+            <h3>Istruzioni</h3>
+            <p>Come le altre tecniche anche questa funziona meglio se viene utilizzata con costanza, cioè se la tecnica 
+            viene integrata nella vita di ogni giorno. <br><br>Di per sé la spiegazione è molto semplice, ciò che devi fare è <b>scrivere la parola che vuoi evocare da 
+            qualche parte ed osservarla</b> fino a 2-3 minuti.
+
+            <p>Con questo <i>atto di volontà</i> osserviamo la parola per un breve lasso di tempo, e visto che ogni parola è una potenziale forza attiva come un simbolo, ed esprime 
+            almeno un significato, stimoleremo l'evocazione di questa parola al nostro interno.</p>
+            
+            
+            <p>Ciò che importa poi è sviluppare l’arte di utilizzarla 
+            in vari momenti durante la nostra giornata tipo. La tua fantasia ti potrà aiutare. <br><br>Puoi ad es. lasciare un 
+            cartoncino in un luogo dove passi spesso e ogni tanto fermarti per osservare la parola.
+             Oppure puoi dedicare 
+            un momento specifico della giornata a questo piccolo esercizio.</p>
+          </div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+    open_scrivere_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica dello scrivere",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+            <h3>Istruzioni</h3>
+            <p> Per evocare la parola desiderata scrivila molte volte su di un foglio di carta. <br><br>Puoi ripetere tante volte la stessa parola, puoi scrivere tutti i sinonimi e i termini che colleghi alla qualità che vuoi evocare. Oppure puoi scrivere tutte le varie qualità di cui hai bisogno in un dato momento o anche scrivere delle frasi che ti ricordano la qualità interiore. <br><br>Anche qui, è bene includere questa tecnica nella nostra vita attraverso la nostra creatività ricordandoci l’essenza della tecnica, cioè l’evocazione dello stato interiore desiderato.</p>
+          </div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+    open_riflettere_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica della riflessione attiva",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+<h3>Istruzioni</h3>
+            <p>Utilizza la tua capacità di riflettere ed immaginare per approfondire il senso ed il significato della parola che vuoi evocare internamente.<br><br>
+             Prenditi un po 'di tempo, qualche minuto o anche più facendo una camminata e <b>rifletti con il tuo pensiero</b> sulla parola. <br><br>
+             Avere chiaro il significato di qualcosa è molto utile e la riflessione contribuirà ad <b>evocare la parola scelta interiormente</b>. <br><br>
+             Come le altre tecniche si ottengono buoni risultati quando usiamo questo esercizio con ritmo su più giorni. Cerchiamo quindi di stabilire un semplice piano di allenamento.</p>
+          </div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+        open_sentire_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica del sentire",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+           <h3>Istruzioni</h3>
+            <p> Scrivi la parola su un foglio di carta e mettila davanti ai tuoi occhi. 
+            <br><br>Osserva la parola e questa volta cerca di <b>sentire</b> interiormente il suo significato, il suo senso, la sua energia. 
+            <br> Aiutati ripetendo la parola mentalmente, evocando delle immagini collegate, o recitando una frase creata da te che ti ricorda la qualità. <br><br>
+            Non scoraggiarti se durante i primi tentativi non senti nulla. <br>Attraverso una pratica regolare svilupperai le tue capacità interiori; 
+            dopo un po di tempo, qualcosa di nuovo crescerà in te.</div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+        open_ripetizione_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica della ripetizione",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+<h3>Istruzioni</h3>
+<p> Per evocare interiormente l’energia della parola di cui hai bisogno ripetila mentalmente o a bassa voce per varie volte.<br><br>
+             Qualche volta capiterà che non avrai con te un foglio dove scrivere la parola, o tempo sufficiente per rifletterci su.
+              Oppure più semplicemente, non avrai voglia di utilizzare una tecnica più complicata.
+               Ecco allora un ottima occasione utilizzare un metodo più semplice: <b>ripetere la parola mentalmente</b> per un certo numero di volte (3,9,12 volte, ecc). <br><br>   
+Oltre a ripetere mentalmente la parola molte volte puoi creare una frase o un mantra dove la tua parola è inclusa e ripeterlo un numero stabilito di volte.</p>
+        <p>Sentiti libero di unire questa tecnica ad una di quelle precedenti, per esempio a quella del sentire.</p>
+          </div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+        open_leggere_dialog: function () {
+      let w1 = this.$swal;
+      this.$swal({
+        title: "La tecnica della lettura",
+        html: `  
+          <div style="text-align: left;">
+                        <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+            <h3>Istruzioni</h3>
+            <p>Per evocare una qualità interiore, possiamo scriverla su un cartoncino, ripeterla mentalmente più volte oppure possiamo anche <b>leggere un libro o un articolo</b> che parla dell'argomento che vogliamo evocare,
+            e così, leggendo con interesse, evocheremo interiormente la qualità desiderata. 
+             (questa tecnica se usata creativamente, ed è il nostro scopo… è potenzialmente infinita. )<br><br>
+              Quindi ora scegli un libro, un pdf un articolo sulla parola che vuoi evocare e immergiti. 
+          </div>`,
+        confirmButtonText: "Concludi l'esercizio &rarr;",
+        showCloseButton: true
+      }).then(function (r) {
+        console.log(r);
+        w1.fire({
+          showCloseButton: true,
+          title: "Congratulazioni! 🎊",
+          html: ` <div style="text-align: left;">
+              <small>Ora che hai concluso la pratica puoi provare un altra tecnica <b>tecnica</b> oppure leggere più in basso dei consigli pratici 
+              sul ritmo con cui integrare questa pratica nella tua vita.</small>
+              </div>
+            `,
+          confirmButtonText: "Torna al sito"
+        });
+      });
+    },
+    async open_composta_dialog() {
       const steps = ["1", "2", "3"];
       const Queue = this.$swal.mixin({
         progressSteps: steps,
@@ -300,13 +582,30 @@ export default {
           <div style="text-align: left;">
             <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
           <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
-           <p style="font-size: 15px;">Prestare coscientemente attenzione alla parola reppresenta una tecnica ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
+
+           <p>Questa tecnica è un unione di più tecniche. Avrai un esempio di quello che può significare 
+           unire più tecniche fra loro. In futuro, quando ti sentirai pronto, potrai farlo anche tu.</p>
+           </div>`,
+        confirmButtonText: "Prossimo Step &rarr;",
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
+        currentProgressStep: 0,
+        // optional class to show fade-in backdrop animation which was disabled in Queue mixin
+        showClass: { backdrop: "swal2-noanimation" },
+      });
+      await Queue.fire({
+        title: "La tecnica dell'attenzione cosciente",
+        html: `  
+          <div style="text-align: left;">
+            <p style="display: inline; font-size: 14px; text-transform: uppercase; font-weight: bold; opacity: .7; padding-right: 6px;">Parola scelta <span style="font-size: 25px">&rarr;</span></p>
+          <p style="background-color: ` + this.currentColor + `;  display: inline-block; padding: 3px 10px; margin: 0; border-radius: 6px; font-weight: bold;">` + this.currentWord + `</p>
+           <h3>Istruzioni</h3>
+           <p>Prestare coscientemente attenzione alla parola reppresenta una tecnica ancora più efficace. Ora puoi rilassarti e seguire questi step:</p>
           
            <p>Assumi una posizione di rilasciamento ed osserva la parola con attenzione per un periodo di 1 o 2 minuti. <small>Se preferisci puoi scrivere la parola su un cartoncino, e osservarlo.</small></p>
            <p>Se dall'inconscio emergono idee ed immagini collegate alla parola, lasciale affiorare e prendine nota.</p>
            </div>`,
         confirmButtonText: "Prossimo Step &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 0,
         // optional class to show fade-in backdrop animation which was disabled in Queue mixin
         showClass: { backdrop: "swal2-noanimation" },
@@ -321,7 +620,7 @@ export default {
           <p>Rifletti sul significato della parola e annota i risultati.</p>
           </div>`,
         confirmButtonText: "Prossimo Step &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 1,
         showClass: { backdrop: "swal2-noanimation" },
       });
@@ -335,7 +634,7 @@ export default {
           <p>Cerca di "sentire" la qualità psicologica contenuta nella parola, lasciatene permeare, se possibile fino ad arrivare ad identificarti con essa.</p>
           </div>`,
         confirmButtonText: "Prossimo Step &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 2,
         showClass: { backdrop: "swal2-noanimation" },
       });
@@ -349,7 +648,7 @@ export default {
           <p>Mentre osservi la parola, pronunciala ad alta voce, o mormorala.</p>
           </div>`,
         confirmButtonText: "Prossimo Step &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 3,
         showClass: { backdrop: "swal2-noanimation" },
       });
@@ -363,7 +662,7 @@ export default {
           <p>Scrivi la parola diverse volte.</p>
           </div>`,
         confirmButtonText: "Concludi Esercizio &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 4,
         showClass: { backdrop: "swal2-noanimation" },
       });
@@ -377,7 +676,7 @@ export default {
               </div>
             `,
         confirmButtonText: "Torna al sito &rarr;",
-        progressSteps: ["1", "2", "3", "4", "5"],
+        progressSteps: ["1", "2", "3", "4", "5" ,"6"],
         currentProgressStep: 4,
         showClass: { backdrop: "swal2-noanimation" },
       });

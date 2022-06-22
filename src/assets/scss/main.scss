@@ -304,7 +304,7 @@ main.words {
         height: 220px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
         border-radius: 6px;
-        transition: .3s all;
+        transition: .14s all;
         margin-bottom: 2em;
         position: relative;
 
@@ -542,7 +542,7 @@ main.words {
         margin: 1em;
     }
 
-    .pratica-title {
+    .pratica-title, .pratica-smalltext {
         margin: 0 1em;
     }
 }

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="729" height="441" viewBox="0 0 729 441">
+  <defs>
+    <clipPath id="clip-tecnica-ripetizione">
+      <rect width="729" height="441"/>
+    </clipPath>
+  </defs>
+  <g id="tecnica-ripetizione" clip-path="url(#clip-tecnica-ripetizione)">
+    <path id="Tracciato_184" data-name="Tracciato 184" d="M6360.2,7350.145l42.074-124.066h188.795l-36.679,124.066Z" transform="translate(-6070.197 -7067.078)" fill="#a2828e"/>
+    <path id="Tracciato_186" data-name="Tracciato 186" d="M6557.979,7226.079l30.937,110.64h-63.494C6522.965,7336.718,6557.979,7226.079,6557.979,7226.079Z" transform="translate(-6036.549 -7067.111)" fill="#7d616c"/>
+    <path id="Tracciato_185" data-name="Tracciato 185" d="M8594.767,10282.492l292.327,101.217,139.383,55.673s38.946,2.436,47.873-21.907,5.68-31.647,6.086-34.486,0-120.091,0-120.091l-253.93-103.491s-32.693,91.468-64.227,100.374S8594.767,10282.492,8594.767,10282.492Z" transform="translate(-8304.591 -9999.459)" fill="#66608d" opacity="0.12"/>
+    <g id="_3994399_refresh_reload_repeat_rotate_sync_icon" data-name="3994399_refresh_reload_repeat_rotate_sync_icon" transform="translate(364.498 178.624)">
+      <path id="Tracciato_226" data-name="Tracciato 226" d="M83.269,33.734a5.061,5.061,0,0,0-7.159,0l-2.2,2.2A30.405,30.405,0,0,0,44.251,12a30,30,0,0,0-18.243,6.21,5.061,5.061,0,0,0,6.111,8.069,19.97,19.97,0,0,1,12.133-4.153,20.214,20.214,0,0,1,19.131,13.9l-3.35-2.67a5.059,5.059,0,1,0-6.308,7.91L66.41,51.394a5.054,5.054,0,0,0,6.733-.376L83.268,40.893a5.061,5.061,0,0,0,0-7.159Z" transform="translate(-3.75)" fill="#fdbb80"/>
+      <path id="Tracciato_227" data-name="Tracciato 227" d="M52.634,62.224A19.97,19.97,0,0,1,40.5,66.377a20.214,20.214,0,0,1-19.131-13.9l3.35,2.67a5.059,5.059,0,1,0,6.308-7.91L18.343,37.108a5.069,5.069,0,0,0-6.733.376L1.484,47.609a5.062,5.062,0,1,0,7.159,7.159l2.2-2.2A30.405,30.405,0,0,0,40.5,76.5a30,30,0,0,0,18.243-6.21,5.061,5.061,0,1,0-6.111-8.069Z" transform="translate(0 -3.75)" fill="#fdbb80"/>
+    </g>
+  </g>
+</svg>
