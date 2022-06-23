@@ -533,16 +533,6 @@ main.words {
     }
 }
 
-.pratica-title {
-    margin: 0;
-}
-
-@media screen and (max-width: 730px) {
-    details {
-        margin: 1em;
-    }
-
-    .pratica-title, .pratica-smalltext {
-        margin: 0 1em;
-    }
+.pratica-smalltext {
+    margin-top: 0;
 }
