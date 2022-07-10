@@ -23,12 +23,12 @@
          </svg>
        </div>
         <p class="main-word">{{currentWord.word}}</p>
-        <p class="button" v-on:click="goToWord(currentWord)">
+        <router-link :to="{ name: 'Word', params: { word: currentWord.word, color: currentWord.color, starred: currentWord.starred }}" class="button" style="text-decoration: none;">
           <span>Pratica con questa parola</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
-          </svg>
-        </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+            </svg>
+        </router-link>
       </div>
     </main>
 
