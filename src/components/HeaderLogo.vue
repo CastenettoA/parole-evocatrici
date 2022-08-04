@@ -8,7 +8,7 @@
           </div>
 
           <div class="header-menu">
-                <div class="menu-item blog">
+                <div class="menu-item blog" @click="goToBlog()">
                   <router-link to="/blog">Blog</router-link>
                 </div>
 
@@ -62,6 +62,11 @@ export default {
       if (this.$route.name != "Home")
         this.$router.push({ name: "Home" });
     },
+
+    goToBlog: function() {
+      if (this.$route.name != "Blog")
+        this.$router.push({ name: "Blog" });
+    }
   }
 }
 </script>
