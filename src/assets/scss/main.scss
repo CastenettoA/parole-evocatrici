@@ -149,6 +149,22 @@ nav {
         align-items: center;
         margin-left: auto;
 
+        .menu-item {
+            margin-right: 0.35em;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 0.55em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font-size: .8em;
+            }
+        }
+
         .donation {
             margin-right: .3em;
 
@@ -198,7 +214,7 @@ nav {
         }
     }
 
-    @media screen and (max-width: 370px) {
+    @media screen and (max-width: 429px) {
         // spacco il menu in mobile
         flex-flow: column;
         justify-content: center;

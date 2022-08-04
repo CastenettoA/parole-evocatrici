@@ -8,6 +8,9 @@
           </div>
 
           <div class="header-menu">
+                <div class="menu-item blog">
+                  <router-link to="/blog">Blog</router-link>
+                </div>
 
                 <div class="donation" v-on:click="openDonationInfoBox()">
                   <svg xmlns="http://www.w3.org/2000/svg"  fill="#fff" class="bi bi-gift-fill" viewBox="0 0 16 16">
