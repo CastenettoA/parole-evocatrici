@@ -540,3 +540,87 @@ main.words {
 .pratica-smalltext {
     margin-top: 0;
 }
+
+
+/* QUOTES STUFF */
+blockquote, q{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    quotes:none;
+    font-style: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+.quotesBox {
+
+}
+
+.quotesItem {
+    background-color: #f3f3f3;
+    box-shadow: 0 1px 2px 0 hsl(219deg 9% 69% / 50%);
+    transition: all .2s;
+    border-radius: 0.7em;
+    margin-bottom: 0.7em;
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+
+    .quo {
+        opacity: .6;
+    }
+
+    &.font-xl {
+        font-size: 1.3em;
+    }
+
+    p {
+        padding: 0; margin: 0;
+    }
+
+    &::first-letter {
+        font-size: 1.15em;
+    }
+
+    &:hover {
+        transform: scale(1.04);
+    }
+}
+
+.quotesItem_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    right: 0.3em;
+    top: 0.3em;
+
+    .share  {
+      display: flex;
+      align-items: center;
+
+      display: flex;
+      align-items: center;
+      background-color: #dadada;
+      border-radius: 50%;
+      padding: 0.25em 0.3em 0.25em 0.25em;
+      justify-content: center;
+      margin-left: 0.3em;
+      transition: .2s all;
+
+      &:hover {
+       background-color: #ccc;
+       cursor: pointer;
+       transform: scale(1.3);
+      }
+    }
+  }

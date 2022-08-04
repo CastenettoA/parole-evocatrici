@@ -15,6 +15,7 @@ import Random from '../views/Random.vue'
 // blog & blog pages (I know..)
 import Blog from '../views/blog/Blog.vue'
 import BlogPWA1 from '../views/blog/article/BlogPWA1.vue'
+import Post1 from '../views/blog/article/PostFrasiRoberto-1.vue'
 import PrivacyPolicy from '@/views/blog/article/PrivacyPolicy.vue'
 
 const routes = [
@@ -36,9 +37,10 @@ const routes = [
 
   // blog & blog pages
   { path: '/blog', name: 'Blog', component: Blog },
+  { path: '/blog/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy }, //Blog-title-postNumber 
   // { path: '/blog:ppost', name: 'Blog', component: Blog }, // sub-routes
   { path: '/blog/parole-evocatrici.com-e-una-pwa', name: 'BlogPWA1', component: BlogPWA1 }, //Blog-title-postNumber 
-  { path: '/blog/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy }, //Blog-title-postNumber 
+  { path: '/blog/frasi-roberto-assagioli', name: 'Post1', component: Post1 }, //Blog-title-postNumber 
 ]
 
 const router = createRouter({

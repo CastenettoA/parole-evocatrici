@@ -15,6 +15,7 @@
       <h3>Ultimi Articoli</h3>
 
       <!-- olny the first h3 is margin-top: 0 -->
+      <h3 style="margin-top: 0;"><a href="/blog/frasi-roberto-assagioli">Frasi selezionate di Roberto Assagioli</a></h3>     
       <h3 style="margin-top: 0;"><a href="/blog/parole-evocatrici.com-e-una-pwa">Siamo una Progressive Web Application (PWA) 🚀</a></h3>     
     </main>
 
