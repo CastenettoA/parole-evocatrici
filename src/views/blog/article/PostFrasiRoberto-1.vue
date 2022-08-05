@@ -24,7 +24,7 @@
       <h3>Frasi di Roberto Assagioli</h3>
 
       <div class="quotesBox">
-        <blockquote class="quotesItem font-xl" v-for="(q, key) in RAquotes">
+        <blockquote class="quotesItem font-xl" v-for="(q, key) in RAquotes" :id="'quote-'+(key+1)">
           <div class="quotesItem_buttons">
               <div class="share" title="condividi questa citazione" v-on:click="shareQuote(key)">
                 <svg style="width:14px;height:14px" viewBox="0 0 24 24">
@@ -72,24 +72,24 @@ export default {
   },
   methods: {
    shareQuote: function(quoteskey) {
-        // this.$gtag.event('share_salmo', { method: 'Google' }); // send event to gAnalitics
+        this.$gtag.event('share_quote', { method: 'Google' }); // send event to gAnalitics
 
-        // let salmoNLink = Number(quoteskey)+1;
-        // let salmoTitle = this.salmi[quoteskey].titleWithNumber + ' • ' + this.salmi[quoteskey].title,
-        //     salmoContent = "“" + this.salmi[quoteskey].content[0] + ' ' + this.salmi[quoteskey].content[1] + "”";
+        let link = window.location.href + '#quote-' + (quoteskey+1);
+        let title = 'Ciao 😊, ho letto questa citazione e ho pensato che potresti trovarla utile.';
+        let content = '...';
 
-          // if (navigator.share) { // web share api works!
-          //   navigator.share({
-          //     title: salmoTitle,
-          //     text: salmoContent,
-          //     url: 'https://castenettoa.com/app/salmi/s/' + salmoNLink,
-          //   })
-          //     .then(() => console.log('Successful share'))
-          //     .catch((error) => console.log('Error sharing', error));
-          // } else {
-          //   // no Web Share APi support, fallback with vue3-clipboard..!
-          //   window.prompt("Copia negli appunti con Ctrl+C, Enter e poi condividi il salmo dove preferisci.", salmoTitle + " (https://castenettoa.com/app/salmi/s/" + salmoNLink + ") " + salmoContent);
-          // }
+          if (navigator.share) { // web share api works!
+            navigator.share({
+              title: title,
+              text: content,
+              url: link,
+            })
+              .then(() => console.log('Successful share'))
+              .catch((error) => console.log('Error sharing', error));
+          } else {
+            // no Web Share APi support, fallback with vue3-clipboard..!
+            window.prompt("Copia negli appunti con Ctrl+C, Enter e poi condividi il salmo dove preferisci.", title + " " + link );
+          }
     },
     goToHome: function(w) { 
       if(this.$route.name != 'Home')

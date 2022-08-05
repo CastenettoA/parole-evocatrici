@@ -34,7 +34,7 @@
 
 
 
-        
+
   <FooterMain></FooterMain>
   </div>
 </template>
@@ -52,6 +52,17 @@ export default {
     }
   },
   created: function() {
+    let arr = [];
+    console.log(this.basicWords.length);
+    this.basicWords.forEach(function(val, index, num) {
+      // https://parole-evocatrici.com/word/Infinito
+      arr.push('https://parole-evocatrici.com/word/' + val);
+    })
+
+    
+
+    console.log(arr);
+
     document.title = 'Parole Evocatrici - Risveglia e sviluppa le tue qualità latenti.';
     document.getElementsByTagName('meta')["description"].content = 'parole-evocatrici.com è un servizio che ti permette di allenare e stimolare le tue qualità interiori direttamente online.';
     window.scrollTo(0,0); // needed because the windwos was not to top... try to belive it
@@ -63,10 +74,10 @@ export default {
 
 
     let c = randomColor({ luminosity: 'light', hue: 'green', count: this.basicWords.length }); // random color on any page load folks!
-    
+
     let favoriteWords = localStorage.getItem('favoriteWords');
     favoriteWords = favoriteWords ? favoriteWords.split(',') : null;
-    
+
 
     let w = [];
     this.basicWords.map(function(el, i, arr) {
@@ -85,7 +96,7 @@ export default {
   methods: {
     openDonationInfoBox: function() {
       this.$swal({
-        title: "🌟 Supporta questo progetto", 
+        title: "🌟 Supporta questo progetto",
         html:  "Questo progetto è gratuito, ma se vuoi puoi contribuire ai suoi costi di sviluppo e di mantenimento, nonchè ai progetti che svilupperò in futuro.",
          showCloseButton: true,
           showCancelButton: true,
@@ -100,7 +111,7 @@ export default {
     },
     openIstitutoInfoBox: function() {
       this.$swal({
-        title: "🌟 La Psicosintesi", 
+        title: "🌟 La Psicosintesi",
         html:  "Questa tecnica, sviluppando le qualità e funzioni limitate e gli aspetti superiori della psiche contribuisce alla formazione armonica ed integrale della personalità, la propria psicosintesi. <br><br> La Psicosintesi è un metodo sviluppato da Roberto Assagioli che, citandolo testualmente, 'può e deve essere applicato da ognuno a se stesso, promuovendo ed accelerando lo sviluppo interno ed il dominio di se, che dovrebbero costituire la meta di tutti'. <br><br>Naturalmente un grande aiuto può essere dato dalla <i>psicosintesi didattica</i>; perciò ti lascio qui in basso un link per andare sul sito web ufficiale dell'Istituto di Psicosintesi.",
          showCloseButton: true,
           showCancelButton: true,
@@ -113,21 +124,21 @@ export default {
           location.href = 'http://www.psicosintesi.it';
       });
     },
-    goToinfoPage: function(w) { 
+    goToinfoPage: function(w) {
       if(this.$route.name != 'Help')
         this.$router.push({ name: "Help" });
     },
-    
+
     goToWord: function(currentWord) {
       this.$router.push({ name: "Word", params: { word: currentWord.word, color: currentWord.color, starred: currentWord.starred } });
     },
 
-    goToHome: function(w) { 
+    goToHome: function(w) {
       if(this.$route.name != 'Home')
         this.$router.push({ name: "Home" });
     },
 
-    addToFavorites: function(word) { 
+    addToFavorites: function(word) {
       let favoriteWords = localStorage.getItem('favoriteWords');
 
       if (!favoriteWords) { // se non ci sono faviriti aggiungo la parola ai favoriti

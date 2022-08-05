@@ -615,12 +615,28 @@ q:before, q:after {
     &:hover {
         transform: scale(1.04);
     }
+
+    &:target { // when the quote is focused
+        background-color: #b0bec5e3;
+        border: 2px solid #607d8b;
+        animation: quoteIn .2s ease-in .1s 1;
+    }
+}
+
+@keyframes quoteIn {
+    0% {
+        transform: translateY(-.4em) scale(1.08);
+    }
+
+    100% {
+        transform: translateY(0em) scale(1.04);
+    }
 }
 
 .quotesItem_buttons {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     position: absolute;
     right: 0.3em;
     top: 0.3em;
