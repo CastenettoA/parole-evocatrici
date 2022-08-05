@@ -60,7 +60,6 @@ module.exports = defineConfig({
         "https://parole-evocatrici.com/word/Silenzio",
         "https://parole-evocatrici.com/word/Rispetto",
         "https://parole-evocatrici.com/word/Volontà",
-        "https://parole-evocatrici.com/word/Volontà buona",
         "https://parole-evocatrici.com/word/Luce",
         "https://parole-evocatrici.com/word/Umorismo",
         "https://parole-evocatrici.com/word/Libertà",

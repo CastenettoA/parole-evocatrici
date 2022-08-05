@@ -75,7 +75,7 @@ export default {
         this.$gtag.event('share_quote', { method: 'Google' }); // send event to gAnalitics
 
         let link = window.location.href + '#quote-' + (quoteskey+1);
-        let title = 'Ciao 😊, ho letto questa citazione e ho pensato che potresti trovarla utile.';
+        let title = 'Ciao 😊, ho letto questa citazione e ho pensato che ti potrebbe interessare.';
         let content = '...';
 
           if (navigator.share) { // web share api works!

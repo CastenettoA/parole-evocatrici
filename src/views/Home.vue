@@ -52,17 +52,6 @@ export default {
     }
   },
   created: function() {
-    let arr = [];
-    console.log(this.basicWords.length);
-    this.basicWords.forEach(function(val, index, num) {
-      // https://parole-evocatrici.com/word/Infinito
-      arr.push('https://parole-evocatrici.com/word/' + val);
-    })
-
-    
-
-    console.log(arr);
-
     document.title = 'Parole Evocatrici - Risveglia e sviluppa le tue qualità latenti.';
     document.getElementsByTagName('meta')["description"].content = 'parole-evocatrici.com è un servizio che ti permette di allenare e stimolare le tue qualità interiori direttamente online.';
     window.scrollTo(0,0); // needed because the windwos was not to top... try to belive it
