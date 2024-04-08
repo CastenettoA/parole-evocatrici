@@ -1,4 +1,4 @@
-# parole-evocatrici.com
+# Summary
 [Parole Evocatrici](https://www.parole-evocatrici.com) is a web application where you can play with the psycological ideas of "evocative words", an idea that tells that with you *will* and your *counscious action* you can evocate a quality rapresented by a specific word like *joy* or *courage*.
 
 The web app is developed with the Vue 3 web framework and deployed with Netlify with automatic deploy when this repo is updated.
